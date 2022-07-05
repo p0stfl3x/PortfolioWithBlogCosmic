@@ -8,6 +8,9 @@ mix
   .twig({
     root: 'src/templates/pages', 
     output: '.',
+    html: {
+      inject: false,
+    },
   })
   .copy('src/assets/img', 'public/img')
   .browserSync({
