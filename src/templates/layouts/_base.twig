@@ -7,15 +7,20 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <script src="https://kit.fontawesome.com/10404ee22d.js" crossorigin="anonymous"></script>
+  
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-  {% include '../partials/_navigation.twig' %}
+  <div class="wrapper">
+    {% include '../partials/_header.twig' %}
 
-  {% block content %}
-    <h1>Portfolio</h1>
-  {% endblock %}
+    {% block content %}
+    {% endblock %}
+  </div>
+  
+  {% include '../partials/_footer.twig' %}
 </body>
 
 </html>

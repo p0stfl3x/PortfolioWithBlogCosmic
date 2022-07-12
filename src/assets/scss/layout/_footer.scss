@@ -1,0 +1,50 @@
+@import "../helpers/_variables.scss";
+@import "../helpers/_mixins.scss";
+
+.footer {
+  width: 100vw;
+  padding: 4rem 0;
+  background: $color-grey-1;
+  
+  .container-flex {
+    flex-direction: column;
+    @include flex-row-tablet;
+  }
+  
+  .h2 {
+    margin: 0 auto 1.2rem;
+    color: $color-primary;
+    @include h1-tablet;
+  }
+}
+
+.footer__header {
+  margin-bottom: 2.8rem;
+  @include margin-bottom-min-w(900px, 0);
+}
+
+.footer__social-links {
+  margin: 0 0 2.8rem;
+  @include margin-bottom-min-w(900px, 0);
+}
+
+.footer__copyright {
+  @include align-self-min-w(900px, flex-end);
+}
+
+@media only screen and (min-width: 600px) {
+  .footer {
+
+  }
+}
+@media only screen and (min-width: 768px) {
+  .footer {
+    padding: 8.5rem 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .footer {
+
+  }
+}

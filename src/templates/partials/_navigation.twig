@@ -1,6 +1,6 @@
-{% set navigation = { './index.html': 'Home', './about.html': 'About' } %}
+{% set navigation = { './index.html': 'Home', './about.html': 'About', './works.html': 'Works', './blog.html': 'Blog', './contact.html': 'Contact'  } %}
 
-<nav>
+<nav class="navigation">
   <ul>
     {% for url, name in navigation %}
       <li
@@ -8,7 +8,7 @@
           class="is-selected"
         {% endif %}
       >
-        <a href="{{ url }}">{{ name }}</a>
+        <a class="link nav_link h8" href="{{ url }}">{{ name }}</a>
       </li>
     {% endfor %}
   </ul>

@@ -1,0 +1,26 @@
+@import "_navbar.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  margin-right: -0.5rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .header {
+    padding: 3rem 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .header {
+    padding: 6rem 0;
+  }
+}
+
+.header_right {
+  display: flex;
+  align-items: center;
+}
