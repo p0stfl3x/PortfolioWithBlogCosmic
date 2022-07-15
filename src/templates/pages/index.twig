@@ -5,5 +5,153 @@
 {% block title %}{{ page }}{% endblock %}
 
 {% block content %}
-  <h1 class="title h1">Manifest is a newborn theme. Clean, simple and fast.</h1>
+  <section>
+    <h1 class="title h2 mb-section-primary">Manifest is a newborn theme. Clean, simple and fast.</h1>
+    
+    <div class="carousel d-flex mb-section-primary">
+      <figure class="carousel__item">
+        <picture>
+          <source
+            media="(min-width: 1024px)"
+            srcset="img/home/img-home-01.png"
+            type="image/webp"
+          />
+
+          <img class=" " src="img/home/img-home-01-m.png" alt="">
+        </picture>
+        
+        <figcaption class="h6">
+          Mixkit Inspo
+        </figcaption>
+      </figure>
+      
+      <figure class="carousel__item">
+        <picture>
+          <source
+            media="(min-width: 1024px)"
+            srcset="img/home/img-home-02.png"
+            type="image/webp"
+          />
+           
+          <img class=" " src="img/home/img-home-02-m.png" alt="">
+        </picture>
+        
+        <figcaption class="h6">
+          Abalone
+        </figcaption>
+      </figure>
+      
+      <figure class="carousel__item carousel__item_first-mobile">
+        <picture>
+          <source
+            media="(min-width: 1024px)"
+            srcset="img/home/img-home-03.png"
+            type="image/webp"
+          />
+          
+          <img class=" " src="img/home/img-home-03-m.png" alt="">
+        </picture>
+        
+        <figcaption class="h6">
+          Placeholdery
+        </figcaption>
+      </figure>
+      
+      <figure class="carousel__item carousel__item_last">
+        <picture>
+          <source
+            media="(min-width: 1024px)"
+            srcset="img/home/img-home-04.png"
+            type="image/webp"
+          />
+          
+          <img class=" " src="img/home/img-home-04-m.png" alt="">
+        </picture>
+        
+        <figcaption class="h6">
+          Dreamy
+        </figcaption>
+      </figure>
+    </div>
+      
+    <div class="flex-column-row-desktop-between mb-section-primary">
+      <div class="w-half-desktop mr-2 mb-block-primary mv-30">
+        <h4 class="h4">
+          Full-time UI/UX designer <br><br class="d-none-touch">Head of Design at VeronaLabs.com
+        </h4>
+        
+        <a href="#"><span class="material-symbols-outlined icon_arrow-right">trending_flat</span></a>
+      </div>
+        
+      <div class="w-half-desktop mv-30">
+        <p class="p5 p5-to-4-desktop mr-2-desktop">
+          We work with clients around the world from our headquarters in Charleston, Sout h Carolina.
+          <br>
+          <br>
+          We focus on naming, branding, brand narratives, website design and development, and brand experiences.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <section>
+    <div class="d-flex flex-wrap flex-justify-between  mb-block-primary mb-block-primary_static">
+      <h3 class="h3 mr-2">Latest Posts</h3>
+      
+      <a class="p6 d-flex flex-align-center">View All <span class="material-symbols-outlined icon_arrow-right">trending_flat</span></a>
+    </div>
+    
+    <div class="flex-column-row-desktop-between mx-n1-desktop mb-section-primary">
+      <div class="flex-item-equal d-flex flex-column flex-justify-between mx-1-desktop mb-block-primary">
+        <figure>
+          <picture>
+            <img class="image" src="img/home/img-home-05.png" alt="">
+          </picture>
+          
+          <figcaption class="p9 d-flex flex-column d-flex_r flex-justify-between">
+            <span>Interface Design</span>
+            <span>8 June, 2020</span>
+          </figcaption>
+        </figure>
+
+        <h3 class="h3 mb-1">UX traffic light colours</h3>
+
+        <p class="p5 mv-28">UI has to make a huge visual difference between warning, an alert and a success.</p>
+      </div>
+      
+      <div class="flex-item-equal d-flex flex-column flex-justify-between mx-1-desktop mb-block-primary">
+        <figure>
+          <picture>
+            <img class="image" src="img/home/img-home-06.png" alt="">
+          </picture>
+          
+          <figcaption class="p9 d-flex flex-column d-flex_r flex-justify-between">
+            <span>Technology</span>
+            <span>6 May, 2020</span>
+          </figcaption>
+        </figure>
+
+        <h3 class="h3 mv-28 mb-1">Using UX Design to Build a Sustainable Future</h3>
+
+        <p class="p5 mv-28">Transformation has to be driven by everybody, not just by climate groups.</p>
+      </div>
+      
+      <div class="flex-item-equal d-flex flex-column flex-justify-between mx-1-desktop mb-block-primary">
+        <figure>
+          <picture>
+            <img class="image" src="img/home/img-home-07.png" alt="">
+          </picture>
+          
+          <figcaption class="p9 d-flex flex-column d-flex_r flex-justify-between">
+            <span>Visual Design</span>
+            <span>8 June, 2020</span>
+          </figcaption>
+        </figure>
+
+        <h3 class="h3 mb-1">Creativity vs. UX</h3>
+
+        <p class="p5 mv-28">Is it possible to create a delightful user experience without following best UX practices?</p>
+      </div>
+    </div>
+  </section>
 {% endblock %}

@@ -6,15 +6,14 @@
   padding: 4rem 0;
   background: $color-grey-1;
   
-  .container-flex {
+  .d-flex {
     flex-direction: column;
-    @include flex-row-tablet;
+    @include flex-row-min-w(900px);
   }
   
   .h2 {
-    margin: 0 auto 1.2rem;
-    color: $color-primary;
-    @include h1-tablet;
+    margin: 0 0 1.2rem;
+    @include margin-bottom-min-w(900px, 2rem);
   }
 }
 
@@ -32,19 +31,8 @@
   @include align-self-min-w(900px, flex-end);
 }
 
-@media only screen and (min-width: 600px) {
-  .footer {
-
-  }
-}
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
   .footer {
     padding: 8.5rem 0;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .footer {
-
   }
 }

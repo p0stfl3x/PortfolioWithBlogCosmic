@@ -1,4 +1,6 @@
 @import "_navbar.scss";
+@import "../helpers/_variables.scss"; 
+@import "../helpers/_mixins.scss";
 
 .header {
   display: flex;
@@ -23,4 +25,10 @@
 .header_right {
   display: flex;
   align-items: center;
+}
+
+.header_error {
+  justify-content: center;
+  margin-right: 0;
+  padding-bottom: 6rem;
 }

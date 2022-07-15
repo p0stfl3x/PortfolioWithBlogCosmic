@@ -1,38 +1,21 @@
 @import "~normalize.css/normalize.css";
 @import "layout/header";
 @import "layout/footer";
+@import "layout/content";
 @import "helpers/variables";
 @import "helpers/mixins";
-@import "helpers/utilities";
+@import "helpers/placeholders";
 @import "components/fonts";
 @import "components/typography";
 @import "components/buttons";
+@import "components/images";
+@import "layout/content";
+@import "pages/error-page";
+@import "helpers/utilities";
 
 html {
   font-family: 'Lato', sans-serif;
   text-decoration: none;
-  color: $color-grey-9;
+  color: $color-primary;
+  overflow-x: hidden;
 }
-
-.wrapper {
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-@media only screen and (min-width: 600px) {
-  .wrapper {
-    padding: 0 3rem;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .wrapper {
-    padding: 0 5rem;
-  }
-}
-
-.container-flex {
-  display: flex;
-}
-
