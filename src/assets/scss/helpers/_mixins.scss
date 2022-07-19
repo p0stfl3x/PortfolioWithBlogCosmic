@@ -11,6 +11,12 @@
   }
 }
 
+@mixin flex-align-start-max-w($width) {
+  @media only screen and (max-width: $width) {
+    align-items: flex-start;
+  }
+}
+
 @mixin overflow-x-visible-min-w($width) {
   @media only screen and (min-width: $width) {
     overflow: hidden;
@@ -96,6 +102,18 @@
   }
 }
 
+@mixin padding-right-min-w($width, $value) {
+  @media only screen and (min-width: $width) {
+    padding-right: $value;
+  }
+}
+
+@mixin padding-left-min-w($width, $value) {
+  @media only screen and (min-width: $width) {
+    padding-left: $value;
+  }
+}
+
 @mixin margin-bottom-min-w($width, $value) {
   @media only screen and (min-width: $width) {
     margin-bottom: $value;
@@ -109,6 +127,12 @@
 }
 
 @mixin w-optional-min-w($width, $value) {
+  @media only screen and (min-width: $width) {
+    width: $value;
+  }
+}
+
+@mixin mw-optional-min-w($width, $value) {
   @media only screen and (min-width: $width) {
     width: $value;
   }

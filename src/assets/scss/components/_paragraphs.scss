@@ -9,8 +9,8 @@
   font-weight: 400;
   line-height: 1.68;
   letter-spacing: $letterspacing-secondary;
+  color: $color-grey-7;
   margin: 0;
-  @include h3-min-w(900px);
 }
 
 .p5 {
@@ -51,4 +51,21 @@
   line-height: 1.65;
   letter-spacing: $letterspacing-primary;
   color: $color-grey-5;
+}
+
+.blockquote {
+  padding-left: 0.5rem;
+  padding-bottom: 1rem;
+  @include padding-left-min-w(600px, 4rem);
+  border-left: 2px solid $color-grey-5;
+}
+
+.tags {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid $color-grey-5;
+  @media only screen and (min-width: 600px){
+    & {
+      border-bottom-color: $color-grey-1;
+    }
+  }
 }

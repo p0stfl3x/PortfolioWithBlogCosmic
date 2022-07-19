@@ -5,54 +5,138 @@
 {% block title %}Blog{% endblock %}
 
 {% block content %}
-  <section>
+  <section class="hero mb-section-primary">
     <h1 class="title h2">Blog</h1>
     
-    <div class="d-flex">
-      <picture>
-          
+    <div class="d-flex flex-column flex-column_touch flex-justify-between">
+      <picture class="w-47-desktop">
+        <source
+          media="(min-width: 1024px)"
+          srcset="img/blog/img-blog-01.png"
+          type="image/webp"
+        />
+
+        <img class="mw-100" src="img/blog/img-blog-01-m.png" alt="">
       </picture>
       
+      <div class="d-flex flex-column flex-justify-end w-47-desktop">
+        <h6 class="h6">Technology, Interface Design</h6>
+        
+        <h3 class="h3 pr-3-desktop"><a href="/single-blog.html">Using UX Design to Build a Sustainable Future</a></h3>
+        
+        <h6 class="h6">6 May, 2020</h6>
+        
+        <p class="p5 pr-3-desktop">
+          Transformation has to be driven by everybody, not just by climate groups, and we have a responsibility to use our influence to drive this.
+        </p>
+        
+        <ul class="d-flex list-pagination">
+          <li><a class="list-pagination__item list-pagination__item_active" href="#">1</a></li>
+          <li><a class="list-pagination__item" href="#">2</a></li>
+          <li><a class="list-pagination__item" href="#">3</a></li>
+        </ul>
+      </div>
     </div>
   </section>
   
   <section>
-    <form action="">
+    <form class="dropdown dropdown_column-touch w-48-desktop d-flex flex-column flex-column_touch" action="">
+      <label class="dropdown__label h6 mr-2-desktop" for="categories">Categories:</label>
       
+      <select class="dropdown__toggler color-grey-7 h6" name="categories" id="categories">
+        <option class="h9 color-grey-5" value="interaction_design ">Interaction design</option>
+        <option class="h9 color-grey-5" value="interface_design">Interface design</option>
+        <option class="h9 color-grey-5" value="visual_design">Visual design</option>
+        <option class="h9 color-grey-5" value="technology">Technology</option>
+      </select>
     </form>
     
-    <div class="d-flex">
-      <div>
+    <div class="d-flex flex-column flex-column_touch flex-justify-between">
+      <div class="w-48-desktop">
         <picture>
-          
+          <source
+            media="(min-width: 1024px)"
+            srcset="img/blog/img-blog-02.png"
+            type="image/webp"
+          />
+
+          <img class="mw-100" src="img/blog/img-blog-02-m.png" alt="">
         </picture>
         
+        <h6 class="p9">Interface Design 8 June, 2020</h6>
+        
+        <h3 class="h3">UX traffic light colours</h3>
+        
+        <p class="p5">
+          UI has to make a huge visual difference between warning, an alert and a success.
+        </p>
       </div>
       
-      <div>
+      <div class="w-48-desktop">
         <picture>
-          
+          <source
+            media="(min-width: 1024px)"
+            srcset="img/blog/img-blog-03.png"
+            type="image/webp"
+          />
+
+          <img class="mw-100" src="img/blog/img-blog-03-m.png" alt="">
         </picture>
         
+        <h6 class="p9">Visual Design, Technology 8 June, 2020</h6>
+        
+        <h3 class="h3">Understanding users by going beyond personas, demographics, and affinity groups</h3>
+        
+        <p class="p5">
+          Personas are great for ‘humanizing’ users. However, you shouldn’t rely on them to define what larger demographic or affinity groups—especially diverse ones—might want
+        </p>
       </div>
     </div>
     
-    <div class="d-flex">
-      <div>
+    <div class="d-flex flex-column flex-column_touch flex-justify-between mb-block-tablet-only">
+      <div class="w-48-desktop">
         <picture>
-          
+          <source
+            media="(min-width: 1024px)"
+            srcset="img/blog/img-blog-04.png"
+            type="image/webp"
+          />
+
+          <img class="mw-100" src="img/blog/img-blog-04-m.png" alt="">
         </picture>
         
+        <h6 class="p9">Interface Design 8 June, 2020</h6>
+        
+        <h3 class="h3">Mentorship Match — How a simple LinkedIn feature can boost diversity</h3>
+        
+        <p class="p5">
+          LinkedIn is on a clear mission to make professionals more successful by connecting the global workforce and as we learned — diversity and success go hand in hand
+        </p>
       </div>
       
-      <div>
+      <div class="w-48-desktop">
         <picture>
-          
+          <source
+            media="(min-width: 1024px)"
+            srcset="img/blog/img-blog-05.png"
+            type="image/webp"
+          />
+
+          <img class="mw-100" src="img/blog/img-blog-05-m.png" alt="">
         </picture>
         
+        <h6 class="p9">Visual Design 8 June, 2020</h6>
+        
+        <h3 class="h3">Creativity vs. UX</h3>
+        
+        <p class="p5">
+          Is it possible to create a delightful user experience without following best UX practices?
+        </p>
       </div>
     </div>
     
-    <a class="button" href="#"></a>
+    <div class="text-center mb-section-primary">
+     <a class="button" href="#">Load More</a>
+    </div>
   </section>
 {% endblock %}

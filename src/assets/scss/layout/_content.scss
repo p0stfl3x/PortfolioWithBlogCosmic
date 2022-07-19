@@ -7,7 +7,6 @@ body {
   max-width: 1120px;
   margin: 0 auto;
   padding: 0 1rem;
-  
 }
 
 @media only screen and (min-width: 600px) {
@@ -20,6 +19,11 @@ body {
   .wrapper {
     padding: 0 5rem;
   }
+}
+
+.wrapper_article {
+  max-width: 736px;
+  padding: 0;
 }
 
 .wrapper_error {
@@ -60,4 +64,36 @@ body {
 
 .carousel__item_first-mobile {
   @include flex-order-min-w(1024px, -1);
+}
+
+.comments {
+  margin-bottom: 4rem;
+  @include margin-bottom-min-w(900px, 8rem);
+}
+
+.post {
+  border-bottom: 1px solid $color-grey-1;
+  &:last-child {
+    border-bottom: none;
+  }
+  
+  margin-bottom: 2.5rem;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.post__message {
+  .h6 {
+    margin-bottom: 2.5rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  .comments__post_level-2 {
+    .h6 {
+      margin-bottom: 2.5rem;
+    }
+  }
 }

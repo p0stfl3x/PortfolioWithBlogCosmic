@@ -10,6 +10,10 @@
   display: flex;
 }
 
+.d-inline-flex {
+  display: inline-flex;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -18,16 +22,40 @@
   flex-direction: column;
 }
 
+.flex-column_reverse {
+  flex-direction: column-reverse;
+}
+
+.flex-column_touch {
+  @include flex-row-min-w(900px);
+}
+
 .flex-justify-between {
   justify-content: space-between;
+}
+
+.flex-justify-center {
+  justify-content: center;
+}
+
+.flex-justify-end {
+  justify-content: flex-end;
+}
+
+.flex-align-items-start {
+  align-items: flex-start;
 }
 
 .flex-align-items-baseline {
   align-items: baseline;
 }
 
-.flex-align-center {
+.flex-align-items-center {
   align-items: center;
+}
+
+.flex-align-self {
+  align-self: flex-start;
 }
 
 .d-flex_r {
@@ -38,11 +66,43 @@
   @include display-optional-min-w(900px, none);
 }
 
+.position-relative {
+  position: relative;
+}
+
+.line-height-05 {
+  line-height: 0.5;
+}
+
 .is-selected {
   margin: auto;
   padding-bottom: 0.25rem;
   background:linear-gradient($color-primary,$color-primary) bottom no-repeat;
   background-size:50% 1px;
+}
+
+.color-primary {
+  color: $color-primary;
+}
+
+.color-background-primary {
+  color: $background-primary;
+}
+
+.color-grey-5 {
+  color: $color-grey-5;
+}
+
+.color-grey-7 {
+  color: $color-grey-7;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.w-13-5 {
+  width: 13.5rem;
 }
 
 .mv-28 {
@@ -53,9 +113,38 @@
   max-width: 30rem;
 }
 
+.mv-34 {
+  max-width: 34rem;
+}
+
+.mw-100 {
+  width: auto;
+  max-width: 100%;
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+
 .mx-auto-touch {
   margin: 0 auto;
   @include margin-x-min-w(900px, 0);
+}
+
+.ml-1 {
+  margin-left: 1rem;
+}
+
+.mr-05 {
+  margin-right: 0.5rem;
+}
+
+.mr-1 {
+  margin-right: 1rem;
+}
+
+.mr-1-5 {
+  margin-right: 1.5rem;
 }
 
 .mr-2 {
@@ -67,6 +156,11 @@
   margin-bottom: 0;
 }
 
+.my-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -75,9 +169,17 @@
   margin-bottom: 1.5rem;
 }
 
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
 .mb-section-primary {
   margin-bottom: 4rem;
   @include margin-bottom-min-w(900px, 8rem);
+}
+
+.mb-section-secondary {
+  margin-bottom: 6rem;
 }
 
 .mb-block-primary {
@@ -89,8 +191,30 @@
   margin-bottom: 3rem;
 }
 
+.mb-block-secondary {
+  margin-bottom: 3.5rem;
+  @include margin-bottom-min-w(900px, 4.8rem);
+}
+
+.mb-block-tablet-only {
+  margin-bottom: 3.5rem;
+  @include margin-bottom-min-w(900px, 0);
+}
+
 .w-half-desktop {
- @include w-optional-min-w(900px, 50%);
+  @include w-optional-min-w(900px, 50%);
+}
+
+.w-47-desktop {
+  @include w-optional-min-w(900px, 47%);
+}
+
+.w-48-desktop {
+  @include w-optional-min-w(900px, 48.5%);
+}
+
+.mw-100 {
+  max-width: 100%;
 }
 
 .mr-no-lc-1 { /* margin right except last child */
@@ -107,4 +231,8 @@
 
 .mr-2-desktop {
   @include margin-right-min-w(900px, 2rem);
+}
+
+.pr-3-desktop {
+  @include padding-right-min-w(900px, 3rem);
 }

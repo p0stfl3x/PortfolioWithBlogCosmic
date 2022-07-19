@@ -6,21 +6,61 @@
 
 {% block content %}
   <section>
-    <div class="d-flex">
-      <h1 class="title h2">Contact Us</h1>
+    <div class="d-flex flex-justify-between flex-column flex-column_touch mb-section-primary">
+      <h1 class="title h2 w-48-desktop">Contact Us</h1>
       
-      <p>
-        
+      <p class="p4 w-48-desktop mv-34">
+        If you need our help with your user account, have questions about how to use the platform or are experiencing technical difficulties, please do not hesitate to contact us.
       </p>
     </div>
      
-    <div class="d-flex">
-      <div>
+    <div class="d-flex flex-justify-between flex-column flex-column_touch mb-section-primary">
+      <div class="d-flex flex-column w-48-desktop">
+        <h3 class="h3 mb-1-5">Contact information</h3>
         
+        <a class="p6 mb-1" href="#">486 Rahi street, Berlin .98<br>Germany</a>
+        
+        <a class="p6 mb-1" href="#"><span></span><i class="fa-solid fa-phone"></i> +48 601 366 816</a>
+        
+        <a class="p6 mb-block-primary_static" href="#"><span></span><i class="fa-solid fa-envelope"></i> company@support.com</a>
+        
+        <h3 class="h3 mb-1-5">Follow Us</h3>
+        
+        <ul class="social-links d-flex color-grey-5 mb-block-tablet-only">
+          <li class="social-links__item"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>         
+          <li class="social-links__item"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>         
+          <li class="social-links__item"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>         
+          <li class="social-links__item"><a href="#"><i class="fa-brands fa-dribbble"></i></a></li>
+        </ul>
       </div>
       
-      <form action="">
+      <form class="w-48-desktop" action="">
+        <div class="d-flex flex-column mb-block-primary_static">
+          <label class="h5" for="fname">Name*</label>
+          <input class="input_constrained h9" type="text" id="fname" name="fname"  placeholder="Walter Moss">
+        </div>
         
+        <div class="d-flex flex-column mb-block-primary_static">
+          <label class="h5" for="femail">Email*</label>
+          <input class="input_constrained h9" type="email" id="femail" name="femail"  placeholder="Info@manifest.com">
+        </div>
+        
+        <select class="dropdown__toggler color-grey-7 h6 mb-block-primary_static" name="categories" id="fcategories">
+          <option class="h9 color-grey-5" value="reason_for_contact ">Reason For Contact</option>
+          <option class="h9 color-grey-5" value="partnership">Partnership</option>
+          <option class="h9 color-grey-5" value="service_order">Service Order</option>
+          <option class="h9 color-grey-5" value="gratitude">Gratitude</option>
+          <option class="h9 color-grey-5" value="complaint">Complaint</option>
+        </select>
+        
+        <div class="d-flex flex-column mb-block-primary_static">
+          <label class="h5" for="fmessage">Message*</label>
+          <input class="input_constrained h9" type="text" id="fmessage" name="fmessage"  placeholder="Hi there ...">
+        </div>
+        
+        <div>
+          <a class="button d-inline-flex h56 flex-align-items-center" href="#">Resume <span class="material-symbols-outlined icon_arrow-right icon_arrow-right_button">trending_flat</span></a>
+        </div>
       </form>
     </div>
   </section>

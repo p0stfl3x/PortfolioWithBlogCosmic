@@ -5,25 +5,178 @@
 {% block title %}Single Blog{% endblock %}
 
 {% block content %}
-  <section>
+  <section class="jero mb-block-primary_static">
+    <p class="h6 color-grey-5">Technology, Visual Design</p>
+    
     <h1 class="title h2">Using UX Design to Build a Sustainable Future</h1>
     
-    <picture>
-          
+    <p class="h6 color-grey-5">6 May, 2020 <i class="fa-regular fa-message"></i> 8 comments</p>
+    
+    <picture class="w-47-desktop">
+      <source
+        media="(min-width: 800px)"
+        srcset="img/blog/blog-single/img-blogsingle-01-d.png"
+        type="image/webp"
+      />
+
+      <img class="mw-100" src="img/blog/blog-single/img-blogsingle-01-m.png" alt="">
     </picture>
   </section>
   
-  <article>
-    
-  </article>
-  
-  <section>
-    <form action="">
+  <div class="wrapper wrapper_article">
+    <article class="mb-section-secondary">
+      <div class="d-flex flex-align-items-center mb-block-primary_static">
+        <img class="mr-05" src="img/blog/blog-single/img-blogsingle-02.png" alt="">
+
+        <span class="h6">Monica Geller</span>
+      </div>
+
+      <ul class="social-links social-links_left d-flex color-grey-5 mb-block-tablet-only">
+        <li class="social-links__item"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>         
+        <li class="social-links__item"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>         
+        <li class="social-links__item"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>         
+        <li class="social-links__item"><a href="#"><i class="fa-brands fa-dribbble"></i></a></li>
+      </ul>
+
+      <p class="p4 mb-2">
+        Transformation has to be driven by everybody, not just by climate groups, and we have a responsibility to use our influence to drive this. Overwhelming evidence points to the fact that we have about a decade to combat climate change caused by human activity before irreversible damage is caused. It is the biggest crisis of our generation.
+        <br>
+        <br>
+        What Can UX Designers Do?
+        <br>
+        <br>
+        Firstly, on a broader scale, influence is held by people who work in tech, economically, socially and politically. People follow and listen to what happens in the world of tech. We need to take advantage of this to highlight important issues and create awareness around the environmental impact of tech.
+      </p>
+
+      <blockquote class="p4 blockquote color-primary mb-2">
+        “UX designers are in a unique position to create tools with sustainability at their heart by streamlining user workflows, minimizing information overload, and removing potential distractions that keep users from accomplishing tasks they set out to do.”
+        <br>
+        <br>
+        <span class="color-grey-5">‘Designing For Sustainability, Tim Frick, 2014'</span>
+      </blockquote>
+
+      <p class="p4 mb-2">
+        Most of the Internet is unsustainable, so there is an opportunity to make a very real and lasting impact through our work. The following are some ideas for ways in which UX designers can play their part in managing this global crisis.
+      </p>
+
+      <ul class="ul_dotted p4 mb-block-secondary">
+        <li class="mb-2">Ask if the product is solving a real-world problem?</li>
+        <li class="mb-2">Use content strategy to offer choices to customers choices.</li>
+        <li class="">When considering fonts, stick to two font types and reduce the typeface.</li>
+      </ul>
+
+      <div class="tags d-flex">
+        <span class="h6 mr-1">
+          Tags:
+        </span>
+
+        <span class="h6 color-grey-5">
+          <a class="color-grey-5" href="#">Technology</a>, 
+          <a class="color-grey-5" href="#">Interface Design</a>, 
+          <a class="color-grey-5" href="#">Visual Design</a>
+        </span>
+      </div>
+    </article>
+
+    <section>
+      <header class="mb-block-secondary">
+        <h3 class="h3">Leave a Reply</h3>
+        <p class="h6 color-grey-5">Required fields are marked *</p>
+      </header>
       
-    </form>
-    
-    <div class="comments">
-      
-    </div>
-  </section>
+      <form class="mb-section-secondary" action="">
+        <div class="d-flex flex-column flex-column_touch flex-justify-between flex-wrap">
+          <div class="d-flex flex-column w-13-5 mb-block-primary_static">
+            <label class="h5" for="fname">Name*</label>
+            <input class="h9" type="text" id="fname" name="fname"  placeholder="Walter Moss">
+          </div>
+
+          <div class="d-flex flex-column w-13-5 mb-block-primary_static">
+            <label class="h5" for="femail">Email*</label>
+            <input class="h9" type="email" id="femail" name="femail"  placeholder="Info@manifest.com">
+          </div>
+        
+          <div class="d-flex flex-column w-13-5 mb-block-primary_static">
+            <label class="h5" for="furl">Website</label>
+            <input class="h9" type="url" id="furl" name="furl"  placeholder="www.manifest.com">
+          </div>
+        </div>
+        
+        <div class="d-flex mb-2">
+          <input class="mr-05" type="checkbox" id="remember-me" name="remember-me">
+          
+          <label class="h9 color-grey-5" for="remember-me">Save my name, email, and website in this browser for the next time I comment</label>
+        </div>
+                
+        <div class="d-flex flex-column mb-2">
+          <label class="h5" for="fcomment">Comment*</label>
+          <input class="h9" type="text" id="fcomment" name="fcomment"  placeholder="Hi there ...">
+        </div>
+        
+        <div>
+          <a class="button d-inline-flex h56 flex-align-items-center" href="#">Post</a>
+        </div>
+      </form>
+
+      <div class="comments">
+        <h3 class="comments__header h3 mb-1-5">Comments</h3>
+        
+        <div class="comments__body">
+          <div class="post d-flex">
+            <img class="flex-align-self mr-1-5" src="img/blog/blog-single/img-blogsingle-03.png" alt="">
+            
+            <div class="post__message">
+              <div class="d-flex flex-wrap">
+                <h4 class="h4 mr-1-5">Scarlet withch</h4>
+
+                <p class="p9">6 May, 2020</p>
+              </div>
+                
+              <p class="p4 mb-1">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+              </p>
+              
+              <p class="h6"><i class="fa-solid fa-reply"></i> Reply</p>
+              
+              <div class="post comments__post_level-2 d-flex">
+                <img class="flex-align-self mr-1-5" src="img/blog/blog-single/img-blogsingle-04.png" alt="">
+                
+                <div class="post__message">
+                  <div class="d-flex flex-wrap">
+                    <h4 class="h4 mr-1-5">Kate Moss</h4>
+
+                    <p class="p9">6 May, 2020</p>
+                  </div>
+
+                  <p class="p4 mb-1">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+                  </p>
+                  
+                  <p class="h6"><i class="fa-solid fa-reply"></i> Reply</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="post d-flex">
+            <img class="flex-align-self mr-1-5" src="img/blog/blog-single/img-blogsingle-03.png" alt="">
+           
+            <div class="post__message">
+              <div class="d-flex flex-wrap">
+                <h4 class="h4 mr-1-5">Scarlet withch</h4>
+
+                <p class="p9">6 May, 2020</p>
+              </div>
+
+              <p class="p4 mb-1">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+              </p>
+              
+              <p class="h6"><i class="fa-solid fa-reply"></i> Reply</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 {% endblock %}
