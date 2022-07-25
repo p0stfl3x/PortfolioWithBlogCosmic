@@ -30,6 +30,10 @@
   @include flex-row-min-w(900px);
 }
 
+.flex-column_mobile {
+  @include flex-row-min-w(700px);
+}
+
 .flex-justify-between {
   justify-content: space-between;
 }
@@ -54,12 +58,12 @@
   align-items: center;
 }
 
-.flex-align-self {
+.flex-align-self-start {
   align-self: flex-start;
 }
 
 .d-flex_r {
-  @include flex-row-min-w(900px);
+  @include flex-row-min-w(400px);
 }
 
 .d-none-touch {
@@ -122,6 +126,14 @@
   max-width: 100%;
 }
 
+.mw-100 {
+  max-width: 100%;
+}
+
+.mw-40-touch {
+  @include text-max-mw(900px, 40rem);
+}
+
 .mx-auto {
   margin: 0 auto;
 }
@@ -161,12 +173,21 @@
   margin-bottom: 1rem;
 }
 
+.mb-0 {
+  margin-bottom: 0;
+}
+
 .mb-1 {
   margin-bottom: 1rem;
 }
 
 .mb-1-5 {
   margin-bottom: 1.5rem;
+}
+
+.mb-1-5-tablet-only {
+  margin-bottom: 1.5rem;
+  @include margin-bottom-min-w(900px, 0);
 }
 
 .mb-2 {
@@ -196,9 +217,19 @@
   @include margin-bottom-min-w(900px, 4.8rem);
 }
 
+.mb-block-tertiary {
+  margin-bottom: 2.5rem;
+  @include margin-bottom-min-w(900px, 3rem);
+}
+
 .mb-block-tablet-only {
   margin-bottom: 3.5rem;
   @include margin-bottom-min-w(900px, 0);
+}
+
+.mb-block-desktop-only {
+  margin-bottom: 0;
+  @include margin-bottom-min-w(900px, 8rem);
 }
 
 .w-half-desktop {
@@ -213,8 +244,12 @@
   @include w-optional-min-w(900px, 48.5%);
 }
 
-.mw-100 {
-  max-width: 100%;
+.w-48-tablet {
+  @include w-optional-min-w(700px, 48.5%);
+}
+
+.w-50-desktop {
+  @include w-optional-min-w(900px, 49.5%);
 }
 
 .mr-no-lc-1 { /* margin right except last child */
@@ -235,4 +270,8 @@
 
 .pr-3-desktop {
   @include padding-right-min-w(900px, 3rem);
+}
+
+.pl-12-desktop {
+  @include padding-left-min-w(900px, 12rem);
 }

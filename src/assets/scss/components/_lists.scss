@@ -32,15 +32,26 @@ ul {
   
   a {
     color: $color-grey-5;
+    
+    &:hover, &:active {
+      color: $color-primary;
+    }
   }
 }
 
 .social-links_left {
+  margin-bottom: 3.5rem;
+  @include margin-bottom-min-w(1024px, 0);
+  
   @media only screen and (min-width: 1024px){
     position: absolute;
     flex-direction: column;
-    left: 12%;
+    left: -7%;
     padding-top: 0.7rem;
+    
+    @media only screen and (min-width: 1100px) {
+      left: -14%;
+    }
     
     .social-links__item {
       margin-bottom: 1.2rem;

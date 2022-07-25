@@ -7,7 +7,7 @@
 {% block content %}
   <section class="d-flex flex-justify-between flex-column flex-column_touch mb-section-primary">
     <div class="w-48-desktop">
-      <h1 class="title h2 mb-1">About</h1>
+      <h1 class="title h2">About</h1>
       
       <p class="h3 h3_mb color-grey-7">
         I’m Manifest<br>
@@ -16,13 +16,30 @@
       </p>
       
       <picture>
+        <source 
+          media="(max-width: 1023px)" 
+          srcset="img/about/img-about.webp"
+          type="image/webp"
+        /> 
+        
         <source
           media="(min-width: 1024px)"
-          srcset="img/about/img-about.png"
+          srcset="img/about/img-about@2x.webp"
           type="image/webp"
         />
+        
+        <source
+          media="(min-width: 1024px)"
+          srcset="img/about/img-about@2x.png"
+        />
 
-        <img class="mb-block-tablet-only" src="img/about/img-about.png" alt="">
+        <img 
+          class="mb-block-tablet-only"
+          src="img/about/img-about.png"
+          width="225" 
+          height="235" 
+          alt=""
+        />
       </picture>
     </div>
     
@@ -34,7 +51,7 @@
       </p>
       
       <div>
-        <a class="button d-inline-flex h56 flex-align-items-center" href="#">Resume<span class="material-symbols-outlined icon_arrow-right icon_arrow-right_button">trending_flat</span></a>
+        <a class="button d-inline-flex h56 flex-align-items-center" href="#">Resume &nbsp;<span class="material-symbols-outlined icon_arrow-right icon_arrow-right_button">trending_flat</span></a>
       </div>
     </div>
   </section>

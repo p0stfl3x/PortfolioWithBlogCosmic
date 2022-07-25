@@ -4,7 +4,7 @@ body {
 }
 
 .wrapper {
-  max-width: 1120px;
+  max-width: $wrapper-width-primary;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -22,7 +22,7 @@ body {
 }
 
 .wrapper_article {
-  max-width: 736px;
+  max-width: $wrapper-width-comments;
   padding: 0;
 }
 
@@ -77,23 +77,37 @@ body {
     border-bottom: none;
   }
   
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
+  
+  @media only screen and (min-width: 900px){
+    margin-bottom: 2.5rem;
+  }
+    
   &:last-child {
     margin-bottom: 0;
   }
 }
 
 .post__message {
-  .h6 {
+  .post__reply {
+    display: block;
     margin-bottom: 2.5rem;
     &:last-child {
       margin-bottom: 0;
     }
   }
   
-  .comments__post_level-2 {
-    .h6 {
-      margin-bottom: 2.5rem;
+  .post_level-2 {
+    .post__reply {
+      margin-bottom: 1.5rem;
+      
+      @media only screen and (min-width: 900px){
+        margin-bottom: 2.5rem;
+      }
     }
   }
+}
+
+figure {
+  display: table;
 }

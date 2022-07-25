@@ -5,40 +5,83 @@
 {% block title %}Single Blog{% endblock %}
 
 {% block content %}
-  <section class="jero mb-block-primary_static">
+  <section class="hero mb-block-primary_static">
     <p class="h6 color-grey-5">Technology, Visual Design</p>
     
     <h1 class="title h2">Using UX Design to Build a Sustainable Future</h1>
     
-    <p class="h6 color-grey-5">6 May, 2020 <i class="fa-regular fa-message"></i> 8 comments</p>
-    
-    <picture class="w-47-desktop">
+    <div class="d-flex flex-wrap mb-block-primary_static">
+      <span class="h6 color-grey-5 mr-2">6 May, 2020</span>
+      
+      <span class="h6 color-grey-5 mr-2"><i class="fa-regular fa-message"></i> 8 comments</span>
+    </div>
+
+    <picture>
+      <source 
+        media="(max-width: 435px)" 
+        srcset="img/blog/blog-single/img-blogsingle-01.webp"
+        type="image/webp"
+      /> 
+
       <source
-        media="(min-width: 800px)"
-        srcset="img/blog/blog-single/img-blogsingle-01-d.png"
+        media="(min-width: 900px)"
+        srcset="img/blog/blog-single/img-blogsingle-01@3x.webp"
         type="image/webp"
       />
 
-      <img class="mw-100" src="img/blog/blog-single/img-blogsingle-01-m.png" alt="">
+      <source
+        media="(min-width: 900px)"
+        srcset="img/blog/blog-single/img-blogsingle-01@3x.png"
+      />
+      
+      <source
+        media="(min-width: 436px)"
+        srcset="img/blog/blog-single/img-blogsingle-01@2x.webp"
+        type="image/webp"
+      />
+
+      <source
+        media="(min-width: 436px)"
+        srcset="img/blog/blog-single/img-blogsingle-01@2x.png"
+      />
+
+      <img 
+        class="mw-100" 
+        src="img/blog/blog-single/img-blogsingle-01.png" 
+        alt=""
+      />
     </picture>
   </section>
   
   <div class="wrapper wrapper_article">
-    <article class="mb-section-secondary">
+    <article class="mb-section-secondary position-relative">
       <div class="d-flex flex-align-items-center mb-block-primary_static">
-        <img class="mr-05" src="img/blog/blog-single/img-blogsingle-02.png" alt="">
+        <picture>
+          <source
+            media="(min-width: 1024px)"
+            srcset="img/blog/blog-single/img-blogsingle-02@2x.png"
+          />
+
+          <img 
+            class="mr-05"
+            src="img/blog/blog-single/img-blogsingle-02.png"
+            width="70" 
+            height="70" 
+            alt=""
+          />
+        </picture>
 
         <span class="h6">Monica Geller</span>
       </div>
 
-      <ul class="social-links social-links_left d-flex color-grey-5 mb-block-tablet-only">
+      <ul class="social-links social-links_left d-flex color-grey-5">
         <li class="social-links__item"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>         
         <li class="social-links__item"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>         
         <li class="social-links__item"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>         
         <li class="social-links__item"><a href="#"><i class="fa-brands fa-dribbble"></i></a></li>
       </ul>
 
-      <p class="p4 mb-2">
+      <p class="p4 mb-2 color-primary">
         Transformation has to be driven by everybody, not just by climate groups, and we have a responsibility to use our influence to drive this. Overwhelming evidence points to the fact that we have about a decade to combat climate change caused by human activity before irreversible damage is caused. It is the biggest crisis of our generation.
         <br>
         <br>
@@ -55,11 +98,11 @@
         <span class="color-grey-5">‘Designing For Sustainability, Tim Frick, 2014'</span>
       </blockquote>
 
-      <p class="p4 mb-2">
+      <p class="p4 mb-2 color-primary">
         Most of the Internet is unsustainable, so there is an opportunity to make a very real and lasting impact through our work. The following are some ideas for ways in which UX designers can play their part in managing this global crisis.
       </p>
 
-      <ul class="ul_dotted p4 mb-block-secondary">
+      <ul class="ul_dotted p4 color-primary mb-block-secondary">
         <li class="mb-2">Ask if the product is solving a real-world problem?</li>
         <li class="mb-2">Use content strategy to offer choices to customers choices.</li>
         <li class="">When considering fonts, stick to two font types and reduce the typeface.</li>
@@ -87,17 +130,17 @@
       <form class="mb-section-secondary" action="">
         <div class="d-flex flex-column flex-column_touch flex-justify-between flex-wrap">
           <div class="d-flex flex-column w-13-5 mb-block-primary_static">
-            <label class="h5" for="fname">Name*</label>
+            <label class="h5 color-grey-5" for="fname">Name*</label>
             <input class="h9" type="text" id="fname" name="fname"  placeholder="Walter Moss">
           </div>
 
           <div class="d-flex flex-column w-13-5 mb-block-primary_static">
-            <label class="h5" for="femail">Email*</label>
+            <label class="h5 color-grey-5" for="femail">Email*</label>
             <input class="h9" type="email" id="femail" name="femail"  placeholder="Info@manifest.com">
           </div>
         
           <div class="d-flex flex-column w-13-5 mb-block-primary_static">
-            <label class="h5" for="furl">Website</label>
+            <label class="h5 color-grey-5" for="furl">Website</label>
             <input class="h9" type="url" id="furl" name="furl"  placeholder="www.manifest.com">
           </div>
         </div>
@@ -109,12 +152,12 @@
         </div>
                 
         <div class="d-flex flex-column mb-2">
-          <label class="h5" for="fcomment">Comment*</label>
+          <label class="h5 color-grey-5" for="fcomment">Comment*</label>
           <input class="h9" type="text" id="fcomment" name="fcomment"  placeholder="Hi there ...">
         </div>
         
         <div>
-          <a class="button d-inline-flex h56 flex-align-items-center" href="#">Post</a>
+          <a class="button d-inline-flex flex-align-items-center" href="#">Post</a>
         </div>
       </form>
 
@@ -123,7 +166,20 @@
         
         <div class="comments__body">
           <div class="post d-flex">
-            <img class="flex-align-self mr-1-5" src="img/blog/blog-single/img-blogsingle-03.png" alt="">
+            <picture>
+              <source
+                media="(min-width: 1024px)"
+                srcset="img/blog/blog-single/img-blogsingle-03@2x.png"
+              />
+
+              <img 
+                class="flex-align-self-start mr-1-5"
+                src="img/blog/blog-single/img-blogsingle-03.png"
+                width="70" 
+                height="70" 
+                alt=""
+              />
+            </picture>
             
             <div class="post__message">
               <div class="d-flex flex-wrap">
@@ -136,10 +192,23 @@
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
               </p>
               
-              <p class="h6"><i class="fa-solid fa-reply"></i> Reply</p>
+              <a class="h6 post__reply color-grey-5" href="#"><i class="fa-solid fa-reply"></i> Reply</a>
               
-              <div class="post comments__post_level-2 d-flex">
-                <img class="flex-align-self mr-1-5" src="img/blog/blog-single/img-blogsingle-04.png" alt="">
+              <div class="post post_level-2 d-flex">
+                <picture>
+                  <source
+                    media="(min-width: 1024px)"
+                    srcset="img/blog/blog-single/img-blogsingle-04@2x.png"
+                  />
+
+                  <img 
+                    class="flex-align-self-start mr-1-5"
+                    src="img/blog/blog-single/img-blogsingle-04.png"
+                    width="70" 
+                    height="70" 
+                    alt=""
+                  />
+                </picture>
                 
                 <div class="post__message">
                   <div class="d-flex flex-wrap">
@@ -152,14 +221,27 @@
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
                   </p>
                   
-                  <p class="h6"><i class="fa-solid fa-reply"></i> Reply</p>
+                  <a class="h6 post__reply color-grey-5" href="#"><i class="fa-solid fa-reply"></i> Reply</a>
                 </div>
               </div>
             </div>
           </div>
           
           <div class="post d-flex">
-            <img class="flex-align-self mr-1-5" src="img/blog/blog-single/img-blogsingle-03.png" alt="">
+            <picture>
+              <source
+                media="(min-width: 1024px)"
+                srcset="img/blog/blog-single/img-blogsingle-03@2x.png"
+              />
+
+              <img 
+                class="flex-align-self-start mr-1-5"
+                src="img/blog/blog-single/img-blogsingle-03.png"
+                width="70" 
+                height="70" 
+                alt=""
+              />
+            </picture>
            
             <div class="post__message">
               <div class="d-flex flex-wrap">
@@ -172,7 +254,7 @@
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
               </p>
               
-              <p class="h6"><i class="fa-solid fa-reply"></i> Reply</p>
+              <a class="h6 post__reply color-grey-5" href="#"><i class="fa-solid fa-reply"></i> Reply</a>
             </div>
           </div>
         </div>

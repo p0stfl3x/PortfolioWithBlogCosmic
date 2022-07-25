@@ -1,11 +1,19 @@
 .icon_arrow-right {
   font-size: 2.3rem;
   font-weight: 300;
-  color: $color-grey-5;
 }
 
 .icon_arrow-right_button {
+  font-size: 1.7rem;
   font-weight: 200;
   line-height: 0.5;
   color: $background-primary;
+}
+
+.icon_arrow_left-button {
+  font-size: 1.7rem;
+  font-weight: 200;
+  line-height: 0.5;
+  color: $background-primary;
+  transform: rotateY(180deg);
 }

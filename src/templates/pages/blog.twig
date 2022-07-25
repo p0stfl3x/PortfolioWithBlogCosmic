@@ -10,23 +10,49 @@
     
     <div class="d-flex flex-column flex-column_touch flex-justify-between">
       <picture class="w-47-desktop">
+        <source 
+          media="(max-width: 435px)" 
+          srcset="img/blog/img-blog-01.webp"
+          type="image/webp"
+        /> 
+        
         <source
-          media="(min-width: 1024px)"
-          srcset="img/blog/img-blog-01.png"
+          media="(min-width: 700px)"
+          srcset="img/blog/img-blog-01@2x.webp"
           type="image/webp"
         />
 
-        <img class="mw-100" src="img/blog/img-blog-01-m.png" alt="">
+        <source
+          media="(min-width: 700px)"
+          srcset="img/blog/img-blog-01@2x.png"
+        />
+        
+        <source
+          media="(min-width: 436px)"
+          srcset="img/blog/img-blog-01@1-5x.png"
+          type="image/webp"
+        /> 
+        
+        <source
+          media="(min-width: 436px)"
+          srcset="img/blog/img-blog-01@1-5x.png"
+        /> 
+
+        <img
+          class="mw-100 mb-1-5-tablet-only" 
+          src="img/blog/img-blog-01.png" 
+          alt=""
+        />
       </picture>
       
       <div class="d-flex flex-column flex-justify-end w-47-desktop">
-        <h6 class="h6">Technology, Interface Design</h6>
+        <h6 class="h6 mb-1-5">Technology, Interface Design</h6>
         
-        <h3 class="h3 pr-3-desktop"><a href="/single-blog.html">Using UX Design to Build a Sustainable Future</a></h3>
+        <h3 class="h3 pr-3-desktop mb-1"><a href="/single-blog.html">Using UX Design to Build a Sustainable Future</a></h3>
         
-        <h6 class="h6">6 May, 2020</h6>
+        <h6 class="h6 mb-block-tertiary color-grey-5">6 May, 2020</h6>
         
-        <p class="p5 pr-3-desktop">
+        <p class="p5 pr-3-desktop mb-block-secondary">
           Transformation has to be driven by everybody, not just by climate groups, and we have a responsibility to use our influence to drive this.
         </p>
         
@@ -39,7 +65,7 @@
     </div>
   </section>
   
-  <section>
+  <section class="mb-section-primary">
     <form class="dropdown dropdown_column-touch w-48-desktop d-flex flex-column flex-column_touch" action="">
       <label class="dropdown__label h6 mr-2-desktop" for="categories">Categories:</label>
       
@@ -51,41 +77,103 @@
       </select>
     </form>
     
-    <div class="d-flex flex-column flex-column_touch flex-justify-between">
-      <div class="w-48-desktop">
-        <picture>
-          <source
-            media="(min-width: 1024px)"
-            srcset="img/blog/img-blog-02.png"
-            type="image/webp"
-          />
+    <div class="d-flex flex-column flex-column_touch flex-justify-between mb-block-desktop-only">
+      <div class="w-48-desktop mb-block-primary">
+        <figure>
+          <picture>
+            <source 
+              media="(max-width: 435px)" 
+              srcset="img/blog/img-blog-02.webp"
+              type="image/webp"
+            /> 
 
-          <img class="mw-100" src="img/blog/img-blog-02-m.png" alt="">
-        </picture>
+            <source
+              media="(min-width: 700px)"
+              srcset="img/blog/img-blog-02@2x.webp"
+              type="image/webp"
+            />
+
+            <source
+              media="(min-width: 700px)"
+              srcset="img/blog/img-blog-02@2x.png"
+            />
+
+            <source
+              media="(min-width: 436px)"
+              srcset="img/blog/img-blog-02@1-5x.png"
+              type="image/webp"
+            /> 
+
+            <source
+              media="(min-width: 436px)"
+              srcset="img/blog/img-blog-02@1-5x.png"
+            /> 
+
+            <img
+              class="mw-100 mb-1-5-tablet-only" 
+              src="img/blog/img-blog-02.png" 
+              alt=""
+            />
+          </picture>
+          
+          <figcaption class="p9 d-flex flex-column d-flex_r flex-justify-between">
+            <span>Interface Design</span>
+            <span>8 June, 2020</span>
+          </figcaption>
+        </figure>
         
-        <h6 class="p9">Interface Design 8 June, 2020</h6>
-        
-        <h3 class="h3">UX traffic light colours</h3>
+        <h3 class="h3 mb-1">UX traffic light colours</h3>
         
         <p class="p5">
           UI has to make a huge visual difference between warning, an alert and a success.
         </p>
       </div>
       
-      <div class="w-48-desktop">
-        <picture>
-          <source
-            media="(min-width: 1024px)"
-            srcset="img/blog/img-blog-03.png"
-            type="image/webp"
-          />
+      <div class="w-48-desktop mb-block-primary">
+        <figure>
+          <picture>
+            <source 
+              media="(max-width: 435px)" 
+              srcset="img/blog/img-blog-03.webp"
+              type="image/webp"
+            /> 
 
-          <img class="mw-100" src="img/blog/img-blog-03-m.png" alt="">
-        </picture>
+            <source
+              media="(min-width: 700px)"
+              srcset="img/blog/img-blog-03@2x.webp"
+              type="image/webp"
+            />
+
+            <source
+              media="(min-width: 700px)"
+              srcset="img/blog/img-blog-03@2x.png"
+            />
+
+            <source
+              media="(min-width: 436px)"
+              srcset="img/blog/img-blog-03@1-5x.png"
+              type="image/webp"
+            /> 
+
+            <source
+              media="(min-width: 436px)"
+              srcset="img/blog/img-blog-03@1-5x.png"
+            /> 
+
+            <img
+              class="mw-100 mb-1-5-tablet-only" 
+              src="img/blog/img-blog-03.png" 
+              alt=""
+            />
+          </picture>
+          
+          <figcaption class="p9 d-flex flex-column d-flex_r flex-justify-between">
+            <span>Visual Design, Technology</span>
+            <span>8 June, 2020</span>
+          </figcaption>
+        </figure>
         
-        <h6 class="p9">Visual Design, Technology 8 June, 2020</h6>
-        
-        <h3 class="h3">Understanding users by going beyond personas, demographics, and affinity groups</h3>
+        <h3 class="h3 mb-1">Understanding users by going beyond personas, demographics, and affinity groups</h3>
         
         <p class="p5">
           Personas are great for ‘humanizing’ users. However, you shouldn’t rely on them to define what larger demographic or affinity groups—especially diverse ones—might want
@@ -93,21 +181,52 @@
       </div>
     </div>
     
-    <div class="d-flex flex-column flex-column_touch flex-justify-between mb-block-tablet-only">
-      <div class="w-48-desktop">
-        <picture>
-          <source
-            media="(min-width: 1024px)"
-            srcset="img/blog/img-blog-04.png"
-            type="image/webp"
-          />
+    <div class="d-flex flex-column flex-column_touch flex-justify-between mb-block-secondary">
+      <div class="w-48-desktop mb-block-primary">
+        <figure>
+          <picture>
+            <source 
+              media="(max-width: 435px)" 
+              srcset="img/blog/img-blog-04.webp"
+              type="image/webp"
+            /> 
 
-          <img class="mw-100" src="img/blog/img-blog-04-m.png" alt="">
-        </picture>
+            <source
+              media="(min-width: 700px)"
+              srcset="img/blog/img-blog-04@2x.webp"
+              type="image/webp"
+            />
+
+            <source
+              media="(min-width: 700px)"
+              srcset="img/blog/img-blog-04@2x.png"
+            />
+
+            <source
+              media="(min-width: 436px)"
+              srcset="img/blog/img-blog-04@1-5x.png"
+              type="image/webp"
+            /> 
+
+            <source
+              media="(min-width: 436px)"
+              srcset="img/blog/img-blog-04@1-5x.png"
+            /> 
+
+            <img
+              class="mw-100 mb-1-5-tablet-only" 
+              src="img/blog/img-blog-04.png" 
+              alt=""
+            />
+          </picture>
+          
+          <figcaption class="p9 d-flex flex-column d-flex_r flex-justify-between">
+            <span>Interface Design</span>
+            <span>8 June, 2020</span>
+          </figcaption>
+        </figure>
         
-        <h6 class="p9">Interface Design 8 June, 2020</h6>
-        
-        <h3 class="h3">Mentorship Match — How a simple LinkedIn feature can boost diversity</h3>
+        <h3 class="h3 mb-1">Mentorship Match — How a simple LinkedIn feature can boost diversity</h3>
         
         <p class="p5">
           LinkedIn is on a clear mission to make professionals more successful by connecting the global workforce and as we learned — diversity and success go hand in hand
@@ -115,19 +234,50 @@
       </div>
       
       <div class="w-48-desktop">
-        <picture>
-          <source
-            media="(min-width: 1024px)"
-            srcset="img/blog/img-blog-05.png"
-            type="image/webp"
-          />
+        <figure>
+          <picture>
+            <source 
+              media="(max-width: 435px)" 
+              srcset="img/blog/img-blog-05.webp"
+              type="image/webp"
+            /> 
 
-          <img class="mw-100" src="img/blog/img-blog-05-m.png" alt="">
-        </picture>
+            <source
+              media="(min-width: 700px)"
+              srcset="img/blog/img-blog-05@2x.webp"
+              type="image/webp"
+            />
+
+            <source
+              media="(min-width: 700px)"
+              srcset="img/blog/img-blog-05@2x.png"
+            />
+
+            <source
+              media="(min-width: 436px)"
+              srcset="img/blog/img-blog-05@1-5x.png"
+              type="image/webp"
+            /> 
+
+            <source
+              media="(min-width: 436px)"
+              srcset="img/blog/img-blog-05@1-5x.png"
+            /> 
+
+            <img
+              class="mw-100 mb-1-5-tablet-only" 
+              src="img/blog/img-blog-05.png" 
+              alt=""
+            />
+          </picture>
+          
+          <figcaption class="p9 d-flex flex-column d-flex_r flex-justify-between">
+            <span>Visual Design</span>
+            <span>8 June, 2020</span>
+          </figcaption>
+        </figure>
         
-        <h6 class="p9">Visual Design 8 June, 2020</h6>
-        
-        <h3 class="h3">Creativity vs. UX</h3>
+        <h3 class="h3 mb-1">Creativity vs. UX</h3>
         
         <p class="p5">
           Is it possible to create a delightful user experience without following best UX practices?
@@ -135,7 +285,7 @@
       </div>
     </div>
     
-    <div class="text-center mb-section-primary">
+    <div class="text-center">
      <a class="button" href="#">Load More</a>
     </div>
   </section>

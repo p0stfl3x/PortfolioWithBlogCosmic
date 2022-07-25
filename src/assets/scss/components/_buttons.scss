@@ -2,6 +2,10 @@
   color: $background-primary;
   background-color: $color-grey-7;
   padding: 0.7rem 2.13rem;
+  &:hover, &:active {
+    color: $background-primary;
+    background-color: $color-grey-9;
+  }
 }
 
 .button-group {

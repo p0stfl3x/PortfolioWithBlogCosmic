@@ -29,6 +29,12 @@
   }
 }
 
+@mixin text-max-mw($max-width, $width) {
+  @media only screen and (max-width: $width) {
+    max-width: $max-width;
+  }
+}
+
 @mixin h1-min-w($width) {
   @media only screen and (min-width: $width) {
     font-family: 'Red Hat Display', sans-serif;
