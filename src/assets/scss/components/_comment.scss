@@ -1,0 +1,77 @@
+.comment {
+  display: flex;
+}
+
+.comment__message {
+  min-width: 6rem;
+  word-break: break-word;
+  
+  .comment__reply {
+    display: block;
+    margin-bottom: $spacing-m;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  .comment_level-2 {
+    .comment__reply {
+      margin-bottom: $spacing-s;
+      
+      @media only screen and (min-width: $layout-row) {
+        margin-bottom: $spacing-m;
+      }
+    }
+  }
+}
+
+.comment__avatar {
+  align-self: flex-start;
+  margin-right: $spacing-s;
+}
+
+.comment__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+  @media only screen and (min-width: $caption-row) {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: $spacing-xs;
+  }
+}
+
+.comment__name {
+  @include typography($text-h4...);
+  line-height: 1;
+  margin-bottom: $spacing-xs;
+}
+
+@media only screen and (min-width: $caption-row) {
+  .comment__name {
+    margin-right: $spacing-s;
+    margin-bottom: 0;
+  }
+}
+
+.comment__date {
+  @include typography($text-h9...);
+  color: $color-grey-5;
+  margin-bottom: $spacing-xs;
+}
+
+@media only screen and (min-width: $caption-row) {
+  .comment__date {
+    margin-bottom: 0;
+  }
+}
+
+.comment__text {
+  margin-bottom: $spacing-xs;
+}
+
+.comment__reply {
+  @include typography($text-h6...);
+  color: $color-grey-5;
+}

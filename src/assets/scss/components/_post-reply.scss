@@ -1,0 +1,57 @@
+.post-reply {
+  margin-bottom: $spacing-article;
+}
+
+.post-reply__header {
+  margin-bottom: $spacing-xl;
+}
+
+.post-reply__subtitle {
+  @include typography($text-h6...);
+  color: $color-grey-5;
+}
+
+.post-reply__item {
+  display: flex;
+  flex-direction: column;
+  @include spacing(bottom, $m-l...);
+  
+  &:last-child {
+    margin-bottom: $spacing-m;
+  }
+  
+  .post-reply__item_child {
+    @include spacing(bottom, $m-none...);
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.post-reply__item_group {
+  @media only screen and (min-width: $layout-row) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.post-reply__item_child {
+  display: flex;
+  flex-direction: column;
+  width: 13.5rem;
+}
+
+.post-reply__item_checkbox {
+  flex-direction: row;
+}
+
+.post-reply__checkbox {
+  margin-right: $spacing-button-icon;
+}
+
+.post-reply__item-label {
+  @include typography($text-h5...);
+  color: $color-grey-7;
+  margin-bottom: $spacing-xs;
+}

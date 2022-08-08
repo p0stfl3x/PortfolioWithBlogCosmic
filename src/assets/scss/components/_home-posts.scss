@@ -1,0 +1,34 @@
+.home-posts {
+  
+}
+
+.home-posts__header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: $spacing-l;
+}
+
+.home-posts__title {
+  margin-right: $spacing-m;
+}
+
+.home-posts__view-all {
+  @include typography($text-h6...);
+  display: flex;
+  align-items: center;
+  color: $color-grey-5;
+}
+
+.home-posts__previews {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  @include spacing(bottom, $xl-xxl...);
+  
+  @media only screen and (min-width: $layout-row) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 -($spacing-xs);
+  }
+}

@@ -1,151 +1,20 @@
-@mixin flex-row-min-w($width) {
-  @media only screen and (min-width: $width) {
-    flex-direction: row;
-    justify-content: space-between;
-  }
+@mixin typography($family, $size, $weight, $height, $spacing: $letterspacing-primary, $color: $color-primary) {
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+  letter-spacing: $spacing;
+  color: $color;
 }
 
-@mixin flex-justify-center-min-w($width) {
-  @media only screen and (min-width: $width) {
-    justify-content: center;
+@mixin spacing($side, $touch, $desktop) {
+  margin : {
+    #{$side}: $touch;
   }
-}
-
-@mixin flex-align-start-max-w($width) {
-  @media only screen and (max-width: $width) {
-    align-items: flex-start;
-  }
-}
-
-@mixin overflow-x-visible-min-w($width) {
-  @media only screen and (min-width: $width) {
-    overflow: hidden;
-  }
-}
-
-@mixin text-min-mw($max-width, $width) {
-  @media only screen and (min-width: $width) {
-    max-width: $max-width;
-  }
-}
-
-@mixin text-max-mw($max-width, $width) {
-  @media only screen and (max-width: $width) {
-    max-width: $max-width;
-  }
-}
-
-@mixin h1-min-w($width) {
-  @media only screen and (min-width: $width) {
-    font-family: 'Red Hat Display', sans-serif;
-    font-size: 3rem;
-    font-weight: 400;
-    line-height: 1.35;
-    letter-spacing: $letterspacing-secondary;
-  }
-}
-
-@mixin h2-min-w($width) {
-  @media only screen and (min-width: $width) {
-    font-family: 'Red Hat Display', sans-serif;
-    font-size: 2.1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: $letterspacing-secondary;
-  }
-}
-
-@mixin h3-min-w($width) {
-  @media only screen and (min-width: $width) {
-    font-family: 'Red Hat Display', sans-serif;
-    font-size: 1.45rem;
-    font-weight: 400;
-    line-height: 1.65;
-    letter-spacing: $letterspacing-primary;
-  }
-}
-
-@mixin h4-min-w($width) {
-  @media only screen and (min-width: $width) {
-    font-family: 'Lato', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 1.68;
-    letter-spacing: $letterspacing-secondary;
-    margin: 0;
-  }
-}
-
-@mixin display-optional-min-w($width, $value) {
-  @media only screen and (min-width: $width) {
-    display: $value;
-  }
-}
-
-@mixin text-align($minw, $value, $maxw: none) {
-  @media only screen and (min-width: $minw) and (max-width: $maxw) {
-    text-align: $value;
-  }
-}
-
-@mixin margin-right-no-last-child($value) {
-  & {
-    margin-right: $value;
-  }
-  @extend %margin-right-last-child;
-}
-
-@mixin margin-x-min-w($width, $value) {
-  @media only screen and (min-width: $width) {
-    margin-left: $value;
-    margin-right: $value;
-  }
-}
-
-@mixin margin-right-min-w($width, $value) {
-  @media only screen and (min-width: $width) {
-    margin-right: $value;
-  }
-}
-
-@mixin padding-right-min-w($width, $value) {
-  @media only screen and (min-width: $width) {
-    padding-right: $value;
-  }
-}
-
-@mixin padding-left-min-w($width, $value) {
-  @media only screen and (min-width: $width) {
-    padding-left: $value;
-  }
-}
-
-@mixin margin-bottom-min-w($width, $value) {
-  @media only screen and (min-width: $width) {
-    margin-bottom: $value;
-  }
-}
-
-@mixin align-self-min-w($width, $value) {
-  @media only screen and (min-width: $width) {
-    align-self: $value;
-  }
-}
-
-@mixin w-optional-min-w($width, $value) {
-  @media only screen and (min-width: $width) {
-    width: $value;
-  }
-}
-
-@mixin mw-optional-min-w($width, $value) {
-  @media only screen and (min-width: $width) {
-    width: $value;
-  }
-}
-
-@mixin flex-order-min-w($width, $value) {
-  @media only screen and (min-width: $width) {
-    order: $value;
+  
+  @media only screen and (min-width: 900px) {
+    margin : {
+      #{$side}: $desktop;
+    }
   }
 }

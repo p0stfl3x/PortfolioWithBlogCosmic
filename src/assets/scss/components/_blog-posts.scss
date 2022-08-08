@@ -1,0 +1,12 @@
+.blog-posts__form {
+  @extend %flex-column-desktop;
+  @media only screen and (min-width: $layout-row) {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+.blog-posts__load-more {
+  text-align: center;
+}

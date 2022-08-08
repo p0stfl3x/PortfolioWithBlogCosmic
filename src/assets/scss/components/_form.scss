@@ -1,0 +1,62 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 34rem;
+  @include typography($text-h6...);
+  margin-bottom: $spacing-l;
+  
+  .form__item-label {
+    @include typography($text-h6...);
+    color: $color-grey-7;
+    margin-bottom: $spacing-xs;
+  }
+  
+  @media only screen and (min-width: $layout-row) {
+    max-width: 100%;
+  }
+}
+
+.form__item_col-row {
+  .form__item-label {
+    color: $color-primary;
+    margin-bottom: $spacing-s;
+  }
+  
+  @media only screen and (min-width: $layout-row) {
+    flex-direction: row;
+    
+    .form__item-label {
+      margin: 0 $spacing-m 0 0;
+    }
+  }
+}
+
+.form__item_has-error {
+  input {
+    border-color: transparent transparent $color-error transparent;
+  }
+}
+
+.form__item_has-error-select {
+  .select {
+    border-color: transparent transparent $color-error transparent;
+  }
+}
+
+.form__item_has-error::after {
+  content: "This field is required";
+  @include typography($text-h9...);
+  color: $color-error;
+}
+
+.form__item_has-error-select::after {
+  content: "Please choose an option";
+  @include typography($text-h9...);
+  color: $color-error;
+}

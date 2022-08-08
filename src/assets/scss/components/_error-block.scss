@@ -1,0 +1,33 @@
+.error-block {
+  padding-top: $spacing-xs;
+}
+
+.error-block__body {
+  margin-bottom: $spacing-m;
+}
+
+.error-block__title {
+  @include typography($text-h1_error...);
+  color: $color-grey-3;
+  @include spacing(bottom, $m-none...);
+}
+
+.error-block__subtitle {
+  @include typography($text-h3...);
+  color: $color-grey-7;
+}
+
+.error-block__subtitle_larger {
+  @include typography($text-h2...);
+  color: $color-grey-3;
+}
+
+.error-block__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.error-block__footer-button {
+  margin-bottom: $spacing-s;
+}

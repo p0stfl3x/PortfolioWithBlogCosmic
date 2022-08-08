@@ -1,0 +1,21 @@
+.project-feature {
+  @include spacing(bottom, $xl-xxl...);
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.project-feature__title {
+  margin-bottom: $spacing-m;
+}
+
+.project-feature__image {
+  max-width: 100%;
+  margin-bottom: $spacing-l;
+}
+
+.project-feature__description {
+  @include typography($text-h4...);
+  color: $color-grey-7;
+}

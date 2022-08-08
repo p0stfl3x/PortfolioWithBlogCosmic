@@ -1,0 +1,39 @@
+.project-preview {
+  
+}
+
+.project-preview__info {
+  @extend %flex-column-tablet;
+}
+
+.project-preview__image {
+  @extend %flex-column-tablet;
+  
+  img {
+    max-width: 100%;
+    margin-bottom: $spacing-s;
+    
+    @media only screen and (min-width: $layout-row-tablet) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.project-preview__title {
+  margin-bottom: $spacing-s;
+  padding-bottom: $spacing-xs;
+//  change^
+  background:linear-gradient($color-grey-3, $color-grey-3) left bottom no-repeat;
+  background-size: 5.5rem 1px;
+}
+
+.project-preview__category {
+  @include typography($text-h6...);
+  margin-bottom: $spacing-xs;
+}
+
+.project-preview__year {
+  @include typography($text-h6...);
+  margin-bottom: $spacing-m;
+  color: $color-grey-7;
+}

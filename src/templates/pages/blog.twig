@@ -5,287 +5,413 @@
 {% block title %}Blog{% endblock %}
 
 {% block content %}
-  <section class="hero mb-section-primary">
-    <h1 class="title h2">Blog</h1>
+  <section class="blog-trending">
+    <h1 class="blog-trending__title h2 h2_hero">Blog</h1>
     
-    <div class="d-flex flex-column flex-column_touch flex-justify-between">
-      <picture class="w-47-desktop">
-        <source 
-          media="(max-width: 435px)" 
-          srcset="img/blog/img-blog-01.webp"
-          type="image/webp"
-        /> 
-        
-        <source
-          media="(min-width: 700px)"
-          srcset="img/blog/img-blog-01@2x.webp"
-          type="image/webp"
-        />
+    <div class="blog-trending__slider">
+      <div class="blog-trending__preview post-preview post-preview_trending">
+        <picture class="post-preview__image">
+          <source 
+            media="(max-width: 435px)" 
+            srcset="img/blog/img-blog-01.webp"
+            type="image/webp"
+          /> 
 
-        <source
-          media="(min-width: 700px)"
-          srcset="img/blog/img-blog-01@2x.png"
-        />
-        
-        <source
-          media="(min-width: 436px)"
-          srcset="img/blog/img-blog-01@1-5x.png"
-          type="image/webp"
-        /> 
-        
-        <source
-          media="(min-width: 436px)"
-          srcset="img/blog/img-blog-01@1-5x.png"
-        /> 
+          <source
+            media="(min-width: 700px)"
+            srcset="img/blog/img-blog-01@2x.webp"
+            type="image/webp"
+          />
 
-        <img
-          class="mw-100 mb-1-5-tablet-only" 
-          src="img/blog/img-blog-01.png" 
-          alt=""
-        />
-      </picture>
+          <source
+            media="(min-width: 700px)"
+            srcset="img/blog/img-blog-01@2x.png"
+          />
+
+          <source
+            media="(min-width: 436px)"
+            srcset="img/blog/img-blog-01@1-5x.png"
+            type="image/webp"
+          /> 
+
+          <source
+            media="(min-width: 436px)"
+            srcset="img/blog/img-blog-01@1-5x.png"
+          /> 
+
+          <img
+            class="image" 
+            src="img/blog/img-blog-01.png"
+            width="288"
+            height="250"
+            alt=""
+          />
+        </picture>
+
+        <div class="post-preview__text">
+          <p class="post-preview__category">Technology, Interface Design</p>
+
+          <h2 class="post-preview__title h3"><a href="/single-blog.html">Using UX Design to Build a Sustainable Future</a></h2>
+
+          <p class="post-preview__date">6 May, 2020</p>
+
+          <p class="post-preview__description">
+            Transformation has to be driven by everybody, not just by climate groups, and we have a responsibility to use our influence to drive this. <a class="home-promoted__link" href="#"><span class="material-symbols-outlined icon-arrow icon-arrow_text">trending_flat</span></a>
+          </p>
+
+          <ul class="pagination">
+            <li><a class="pagination__item pagination__item_active" href="#">1</a></li>
+            <li><a class="pagination__item" href="#">2</a></li>
+            <li><a class="pagination__item" href="#">3</a></li>
+          </ul>
+        </div>
+      </div>
       
-      <div class="d-flex flex-column flex-justify-end w-47-desktop">
-        <h6 class="h6 mb-1-5">Technology, Interface Design</h6>
-        
-        <h3 class="h3 pr-3-desktop mb-1"><a href="/single-blog.html">Using UX Design to Build a Sustainable Future</a></h3>
-        
-        <h6 class="h6 mb-block-tertiary color-grey-5">6 May, 2020</h6>
-        
-        <p class="p5 pr-3-desktop mb-block-secondary">
-          Transformation has to be driven by everybody, not just by climate groups, and we have a responsibility to use our influence to drive this.
-        </p>
-        
-        <ul class="d-flex list-pagination">
-          <li><a class="list-pagination__item list-pagination__item_active" href="#">1</a></li>
-          <li><a class="list-pagination__item" href="#">2</a></li>
-          <li><a class="list-pagination__item" href="#">3</a></li>
-        </ul>
+      <div class="blog-trending__preview_inactive post-preview post-preview_trending">
+        <picture class="post-preview__image">
+          <source 
+            media="(max-width: 435px)" 
+            srcset="img/blog/img-blog-01.webp"
+            type="image/webp"
+          /> 
+
+          <source
+            media="(min-width: 700px)"
+            srcset="img/blog/img-blog-01@2x.webp"
+            type="image/webp"
+          />
+
+          <source
+            media="(min-width: 700px)"
+            srcset="img/blog/img-blog-01@2x.png"
+          />
+
+          <source
+            media="(min-width: 436px)"
+            srcset="img/blog/img-blog-01@1-5x.png"
+            type="image/webp"
+          /> 
+
+          <source
+            media="(min-width: 436px)"
+            srcset="img/blog/img-blog-01@1-5x.png"
+          /> 
+
+          <img
+            class="image"
+            src="img/blog/img-blog-01.png"
+            width="288"
+            height="250"
+            alt=""
+          />
+        </picture>
+
+        <div class="post-preview__text">
+          <p class="post-preview__category">Technology, Interface Design</p>
+
+          <h2 class="post-preview__title h3"><a href="/single-blog.html">Using UX Design to Build a Sustainable Future</a></h2>
+
+          <p class="post-preview__date">6 May, 2020</p>
+
+          <p class="post-preview__description">
+            Transformation has to be driven by everybody, not just by climate groups, and we have a responsibility to use our influence to drive this. <a class="home-promoted__link" href="#"><span class="material-symbols-outlined icon-arrow icon-arrow_text">trending_flat</span></a>
+          </p>
+
+          <ul class="pagination">
+            <li><a class="pagination__item pagination__item_active" href="#">1</a></li>
+            <li><a class="pagination__item" href="#">2</a></li>
+            <li><a class="pagination__item" href="#">3</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="blog-trending__preview_inactive post-preview post-preview_trending">
+        <picture class="post-preview__image">
+          <source 
+            media="(max-width: 435px)" 
+            srcset="img/blog/img-blog-01.webp"
+            type="image/webp"
+          /> 
+
+          <source
+            media="(min-width: 700px)"
+            srcset="img/blog/img-blog-01@2x.webp"
+            type="image/webp"
+          />
+
+          <source
+            media="(min-width: 700px)"
+            srcset="img/blog/img-blog-01@2x.png"
+          />
+
+          <source
+            media="(min-width: 436px)"
+            srcset="img/blog/img-blog-01@1-5x.png"
+            type="image/webp"
+          /> 
+
+          <source
+            media="(min-width: 436px)"
+            srcset="img/blog/img-blog-01@1-5x.png"
+          /> 
+
+          <img
+            class="image"
+            src="img/blog/img-blog-01.png"
+            width="288"
+            height="250"
+            alt=""
+          />
+        </picture>
+
+        <div class="post-preview__text">
+          <p class="post-preview__category">Technology, Interface Design</p>
+
+          <h2 class="post-preview__title h3"><a href="/single-blog.html">Using UX Design to Build a Sustainable Future</a></h2>
+
+          <p class="post-preview__date">6 May, 2020</p>
+
+          <p class="post-preview__description">
+            Transformation has to be driven by everybody, not just by climate groups, and we have a responsibility to use our influence to drive this. <a class="home-promoted__link" href="#"><span class="material-symbols-outlined icon-arrow icon-arrow_text">trending_flat</span></a>
+          </p>
+
+          <ul class="pagination">
+            <li><a class="pagination__item pagination__item_active" href="#">1</a></li>
+            <li><a class="pagination__item" href="#">2</a></li>
+            <li><a class="pagination__item" href="#">3</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
   
-  <section class="mb-section-primary">
-    <form class="dropdown dropdown_column-touch w-48-desktop d-flex flex-column flex-column_touch" action="">
-      <label class="dropdown__label h6 mr-2-desktop" for="categories">Categories:</label>
-      
-      <select class="dropdown__toggler color-grey-7 h6" name="categories" id="categories">
-        <option class="h9 color-grey-5" value="interaction_design ">Interaction design</option>
-        <option class="h9 color-grey-5" value="interface_design">Interface design</option>
-        <option class="h9 color-grey-5" value="visual_design">Visual design</option>
-        <option class="h9 color-grey-5" value="technology">Technology</option>
-      </select>
+  <section class="blog-posts">
+    <form class="blog-posts__form form" action="">
+      <div class="form__item form__item_col-row">
+        <label class="form__item-label" for="categories">Categories:</label>
+        
+        <select class="select" name="categories" id="categories">
+          <option value="interaction_design ">Interaction design</option>
+          <option value="interface_design">Interface design</option>
+          <option value="visual_design">Visual design</option>
+          <option value="technology">Technology</option>
+        </select>
+      </div>
     </form>
     
-    <div class="d-flex flex-column flex-column_touch flex-justify-between mb-block-desktop-only">
-      <div class="w-48-desktop mb-block-primary">
-        <figure>
-          <picture>
-            <source 
-              media="(max-width: 435px)" 
-              srcset="img/blog/img-blog-02.webp"
-              type="image/webp"
-            /> 
+    <div class="blog-posts__grid grid-posts">
+      <div class="grid-posts__item post-preview post-preview_grid">
+        <picture>
+          <source 
+            media="(max-width: 435px)" 
+            srcset="img/blog/img-blog-02.webp"
+            type="image/webp"
+          /> 
 
-            <source
-              media="(min-width: 700px)"
-              srcset="img/blog/img-blog-02@2x.webp"
-              type="image/webp"
-            />
+          <source
+            media="(min-width: 700px)"
+            srcset="img/blog/img-blog-02@2x.webp"
+            type="image/webp"
+          />
 
-            <source
-              media="(min-width: 700px)"
-              srcset="img/blog/img-blog-02@2x.png"
-            />
+          <source
+            media="(min-width: 700px)"
+            srcset="img/blog/img-blog-02@2x.png"
+          />
 
-            <source
-              media="(min-width: 436px)"
-              srcset="img/blog/img-blog-02@1-5x.png"
-              type="image/webp"
-            /> 
+          <source
+            media="(min-width: 436px)"
+            srcset="img/blog/img-blog-02@1-5x.png"
+            type="image/webp"
+          /> 
 
-            <source
-              media="(min-width: 436px)"
-              srcset="img/blog/img-blog-02@1-5x.png"
-            /> 
+          <source
+            media="(min-width: 436px)"
+            srcset="img/blog/img-blog-02@1-5x.png"
+          /> 
 
-            <img
-              class="mw-100 mb-1-5-tablet-only" 
-              src="img/blog/img-blog-02.png" 
-              alt=""
-            />
-          </picture>
+          <img
+            class="post-preview__image image"
+            src="img/blog/img-blog-02.png"
+            width="288"
+            height="137"
+            alt=""
+          />
+        </picture>
           
-          <figcaption class="p9 d-flex flex-column d-flex_r flex-justify-between">
-            <span>Interface Design</span>
-            <span>8 June, 2020</span>
-          </figcaption>
-        </figure>
-        
-        <h3 class="h3 mb-1">UX traffic light colours</h3>
-        
-        <p class="p5">
-          UI has to make a huge visual difference between warning, an alert and a success.
-        </p>
+        <div class="post-preview__text">
+          <div class="post-preview__caption">
+            <p class="post-preview__category">Interface Design</p>
+            <p class="post-preview__date">8 June, 2020</p>
+          </div>
+
+          <h3 class="post-preview__title h3">UX traffic light colours</h3>
+
+          <p class="post-preview__description">UI has to make a huge visual difference between warning, an alert and a success.</p>
+        </div>
       </div>
       
-      <div class="w-48-desktop mb-block-primary">
-        <figure>
-          <picture>
-            <source 
-              media="(max-width: 435px)" 
-              srcset="img/blog/img-blog-03.webp"
-              type="image/webp"
-            /> 
+      <div class="grid-posts__item post-preview post-preview_grid">
+        <picture>
+          <source 
+            media="(max-width: 435px)" 
+            srcset="img/blog/img-blog-03.webp"
+            type="image/webp"
+          /> 
 
-            <source
-              media="(min-width: 700px)"
-              srcset="img/blog/img-blog-03@2x.webp"
-              type="image/webp"
-            />
+          <source
+            media="(min-width: 700px)"
+            srcset="img/blog/img-blog-03@2x.webp"
+            type="image/webp"
+          />
 
-            <source
-              media="(min-width: 700px)"
-              srcset="img/blog/img-blog-03@2x.png"
-            />
+          <source
+            media="(min-width: 700px)"
+            srcset="img/blog/img-blog-03@2x.png"
+          />
 
-            <source
-              media="(min-width: 436px)"
-              srcset="img/blog/img-blog-03@1-5x.png"
-              type="image/webp"
-            /> 
+          <source
+            media="(min-width: 436px)"
+            srcset="img/blog/img-blog-03@1-5x.png"
+            type="image/webp"
+          /> 
 
-            <source
-              media="(min-width: 436px)"
-              srcset="img/blog/img-blog-03@1-5x.png"
-            /> 
+          <source
+            media="(min-width: 436px)"
+            srcset="img/blog/img-blog-03@1-5x.png"
+          /> 
 
-            <img
-              class="mw-100 mb-1-5-tablet-only" 
-              src="img/blog/img-blog-03.png" 
-              alt=""
-            />
-          </picture>
-          
-          <figcaption class="p9 d-flex flex-column d-flex_r flex-justify-between">
-            <span>Visual Design, Technology</span>
-            <span>8 June, 2020</span>
-          </figcaption>
-        </figure>
-        
-        <h3 class="h3 mb-1">Understanding users by going beyond personas, demographics, and affinity groups</h3>
-        
-        <p class="p5">
-          Personas are great for ‘humanizing’ users. However, you shouldn’t rely on them to define what larger demographic or affinity groups—especially diverse ones—might want
-        </p>
+          <img
+            class="post-preview__image image"
+            src="img/blog/img-blog-03.png"
+            width="288"
+            height="137"
+            alt=""
+          />
+        </picture>
+
+        <div class="post-preview__text">
+          <div class="post-preview__caption">
+            <p class="post-preview__category">Visual Design, Technology</p>
+            <p class="post-preview__date">8 June, 2020</p>
+          </div>
+
+          <h3 class="post-preview__title h3">Understanding users by going beyond personas, demographics, and affinity groups</h3>
+
+          <p class="post-preview__description">
+            Personas are great for ‘humanizing’ users. However, you shouldn’t rely on them to define what larger demographic or affinity groups—especially diverse ones—might want.
+          </p>
+        </div>
+      </div>
+      
+      <div class="grid-posts__item post-preview post-preview_grid">
+        <picture>
+          <source 
+            media="(max-width: 435px)" 
+            srcset="img/blog/img-blog-04.webp"
+            type="image/webp"
+          /> 
+
+          <source
+            media="(min-width: 700px)"
+            srcset="img/blog/img-blog-04@2x.webp"
+            type="image/webp"
+          />
+
+          <source
+            media="(min-width: 700px)"
+            srcset="img/blog/img-blog-04@2x.png"
+          />
+
+          <source
+            media="(min-width: 436px)"
+            srcset="img/blog/img-blog-04@1-5x.png"
+            type="image/webp"
+          /> 
+
+          <source
+            media="(min-width: 436px)"
+            srcset="img/blog/img-blog-04@1-5x.png"
+          /> 
+
+          <img
+            class="post-preview__image image" 
+            src="img/blog/img-blog-04.png"
+            width="288"
+            height="137"
+            alt=""
+          />
+        </picture>
+         
+        <div class="post-preview__text">
+          <div class="post-preview__caption">
+            <p class="post-preview__category">Interface Design</p>
+            <p class="post-preview__date">8 June, 2020</p>
+          </div>
+
+          <h3 class="post-preview__title h3">Mentorship Match — How a simple LinkedIn feature can boost diversity</h3>
+
+          <p class="post-preview__description">
+            LinkedIn is on a clear mission to make professionals more successful by connecting the global workforce and as we learned — diversity and success go hand in hand.
+          </p>
+        </div>
+      </div>
+      
+      <div class="grid-posts__item post-preview post-preview_grid">
+        <picture>
+          <source 
+            media="(max-width: 435px)" 
+            srcset="img/blog/img-blog-05.webp"
+            type="image/webp"
+          /> 
+
+          <source
+            media="(min-width: 700px)"
+            srcset="img/blog/img-blog-05@2x.webp"
+            type="image/webp"
+          />
+
+          <source
+            media="(min-width: 700px)"
+            srcset="img/blog/img-blog-05@2x.png"
+          />
+
+          <source
+            media="(min-width: 436px)"
+            srcset="img/blog/img-blog-05@1-5x.png"
+            type="image/webp"
+          /> 
+
+          <source
+            media="(min-width: 436px)"
+            srcset="img/blog/img-blog-05@1-5x.png"
+          /> 
+
+          <img
+            class="post-preview__image image"
+            src="img/blog/img-blog-05.png"
+            width="288"
+            height="137"
+            alt=""
+          />
+        </picture>
+         
+        <div class="post-preview__text">
+          <div class="post-preview__caption">
+            <p class="post-preview__category">Visual Design</p>
+            <p class="post-preview__date">8 June, 2020</p>
+          </div>
+
+          <h3 class="post-preview__title h3">Creativity vs. UX</h3>
+
+          <p class="post-preview__description">
+            Is it possible to create a delightful user experience without following best UX practices?
+          </p>
+        </div>
       </div>
     </div>
     
-    <div class="d-flex flex-column flex-column_touch flex-justify-between mb-block-secondary">
-      <div class="w-48-desktop mb-block-primary">
-        <figure>
-          <picture>
-            <source 
-              media="(max-width: 435px)" 
-              srcset="img/blog/img-blog-04.webp"
-              type="image/webp"
-            /> 
-
-            <source
-              media="(min-width: 700px)"
-              srcset="img/blog/img-blog-04@2x.webp"
-              type="image/webp"
-            />
-
-            <source
-              media="(min-width: 700px)"
-              srcset="img/blog/img-blog-04@2x.png"
-            />
-
-            <source
-              media="(min-width: 436px)"
-              srcset="img/blog/img-blog-04@1-5x.png"
-              type="image/webp"
-            /> 
-
-            <source
-              media="(min-width: 436px)"
-              srcset="img/blog/img-blog-04@1-5x.png"
-            /> 
-
-            <img
-              class="mw-100 mb-1-5-tablet-only" 
-              src="img/blog/img-blog-04.png" 
-              alt=""
-            />
-          </picture>
-          
-          <figcaption class="p9 d-flex flex-column d-flex_r flex-justify-between">
-            <span>Interface Design</span>
-            <span>8 June, 2020</span>
-          </figcaption>
-        </figure>
-        
-        <h3 class="h3 mb-1">Mentorship Match — How a simple LinkedIn feature can boost diversity</h3>
-        
-        <p class="p5">
-          LinkedIn is on a clear mission to make professionals more successful by connecting the global workforce and as we learned — diversity and success go hand in hand
-        </p>
-      </div>
-      
-      <div class="w-48-desktop">
-        <figure>
-          <picture>
-            <source 
-              media="(max-width: 435px)" 
-              srcset="img/blog/img-blog-05.webp"
-              type="image/webp"
-            /> 
-
-            <source
-              media="(min-width: 700px)"
-              srcset="img/blog/img-blog-05@2x.webp"
-              type="image/webp"
-            />
-
-            <source
-              media="(min-width: 700px)"
-              srcset="img/blog/img-blog-05@2x.png"
-            />
-
-            <source
-              media="(min-width: 436px)"
-              srcset="img/blog/img-blog-05@1-5x.png"
-              type="image/webp"
-            /> 
-
-            <source
-              media="(min-width: 436px)"
-              srcset="img/blog/img-blog-05@1-5x.png"
-            /> 
-
-            <img
-              class="mw-100 mb-1-5-tablet-only" 
-              src="img/blog/img-blog-05.png" 
-              alt=""
-            />
-          </picture>
-          
-          <figcaption class="p9 d-flex flex-column d-flex_r flex-justify-between">
-            <span>Visual Design</span>
-            <span>8 June, 2020</span>
-          </figcaption>
-        </figure>
-        
-        <h3 class="h3 mb-1">Creativity vs. UX</h3>
-        
-        <p class="p5">
-          Is it possible to create a delightful user experience without following best UX practices?
-        </p>
-      </div>
-    </div>
-    
-    <div class="text-center">
+    <div class="blog-posts__load-more">
      <a class="button" href="#">Load More</a>
     </div>
   </section>

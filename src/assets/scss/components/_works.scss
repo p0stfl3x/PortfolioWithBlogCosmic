@@ -1,0 +1,27 @@
+.works {
+  
+}
+
+.works__header {
+  @extend %flex-columns-desktop;
+  @include spacing(bottom, $xl-xxl...);
+}
+
+.works__project {
+  @extend %flex-columns-tablet;
+  margin-bottom: $spacing-xl;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.works__title {
+  @extend %flex-column-desktop;
+  @include spacing(bottom, $l-none...);
+}
+
+.works__description {
+  @extend %flex-column-desktop;
+  color: $color-grey-9;
+}

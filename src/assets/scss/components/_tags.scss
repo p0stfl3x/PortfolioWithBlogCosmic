@@ -1,0 +1,22 @@
+.tags {
+  display: flex;
+  @include typography($text-h6...);
+  
+  padding-bottom: $spacing-xs;
+  border-bottom: 1px solid $color-grey-5;
+  @media only screen and (min-width: $wrapper-tablet) {
+    border-bottom-color: $color-grey-1;
+  }
+}
+
+.tags-title {
+  margin-right: $spacing-xs;
+}
+
+.tags-links {
+  color: $color-grey-5;
+  
+  a {
+    color: $color-grey-5;
+  }
+}

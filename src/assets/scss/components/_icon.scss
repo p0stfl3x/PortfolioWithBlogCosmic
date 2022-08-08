@@ -1,0 +1,21 @@
+.icon-arrow {
+  font-size: $font-size-h2;
+  font-weight: 300;
+}
+
+.icon-arrow_text {
+  vertical-align: middle;
+}
+
+.icon-arrow_right-button {
+  font-weight: 200;
+  line-height: 0.5;
+  color: $background-primary;
+}
+
+.icon-arrow_left-button {
+  font-weight: 200;
+  line-height: 0.5;
+  color: $background-primary;
+  transform: rotateY(180deg);
+}

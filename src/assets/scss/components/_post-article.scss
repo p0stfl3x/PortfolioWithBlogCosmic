@@ -1,0 +1,46 @@
+.post-article {
+  position: relative;
+  margin-bottom: $spacing-article;
+}
+
+.post-article__author {
+  display: flex;
+  align-items: center;
+  margin-bottom: $spacing-l;
+}
+
+.post-article__author-photo {
+  margin-right: $spacing-button-icon;
+}
+
+.post-article__author-name {
+  @include typography($text-h6...);
+}
+
+.post-article__paragraph {
+  color: $color-primary;
+  margin-bottom: $spacing-m;
+}
+
+.post-article__blockquote {
+  color: $color-primary;
+  margin-bottom: $spacing-m;
+}
+
+.post-article__blockquote-source {
+  color: $color-grey-5;
+}
+
+.post-article__list {
+  color: $color-primary;
+  @include spacing(bottom, $l-xl...);
+  @include typography($text-h4...);
+}
+
+.post-article__list-item {
+  margin-bottom: $spacing-m;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

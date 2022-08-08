@@ -5,11 +5,11 @@
 {% block title %}About{% endblock %}
 
 {% block content %}
-  <section class="d-flex flex-justify-between flex-column flex-column_touch mb-section-primary">
-    <div class="w-48-desktop">
-      <h1 class="title h2">About</h1>
+  <section class="about">
+    <div class="about__column about__column_header">
+      <h1 class="h2 about__title">About</h1>
       
-      <p class="h3 h3_mb color-grey-7">
+      <p class="h3 about__subtitle">
         I’m Manifest<br>
         Full-time UI/UX designer<br>
         Head of Design at VeronaLabs.com
@@ -34,7 +34,6 @@
         />
 
         <img 
-          class="mb-block-tablet-only"
           src="img/about/img-about.png"
           width="225" 
           height="235" 
@@ -43,15 +42,15 @@
       </picture>
     </div>
     
-    <div class="w-48-desktop">
-      <p class="p4 mb-block-primary_static">
+    <div class="about__column about__column_body">
+      <p class="p4 about__text">
         I was born in January 1990. After getting my Degree in computer science in 2002, I persuaded my higher study in Human Computer Interaction Design. I got my first job as Graphic Designer in the year 2008. After getting experience in graphic designing for a year, I moved to UI-UX Designing.
         <br><br>
         In 2010, I decided to work as a Freelance Web, UI-UX &amp; Mobile Interface Designer. I find myself still in the learning phase and have strong desire to achieve as many skills as I can.
       </p>
       
       <div>
-        <a class="button d-inline-flex h56 flex-align-items-center" href="#">Resume &nbsp;<span class="material-symbols-outlined icon_arrow-right icon_arrow-right_button">trending_flat</span></a>
+        <a class="button button_arrow" href="#">Resume &nbsp;<span class="material-symbols-outlined icon-arrow icon-arrow_right-button">trending_flat</span></a>
       </div>
     </div>
   </section>

@@ -1,0 +1,60 @@
+.h1 {
+  @include typography($text-h1...);
+}
+
+.h2 {
+  @include typography($text-h2...);
+  
+  @media only screen and (min-width: $layout-row) {
+    @include typography($text-h1...);
+  }
+}
+
+.h2_hero {
+  max-width: 35rem;
+  
+  @media only screen and (min-width: $layout-row) {
+    max-width: 43rem;
+  }
+}
+
+.h3 {
+  @include typography($text-h3...);
+}
+
+.h3_wide {
+  @include typography($text-h5_wide...);
+  text-transform: uppercase;
+}
+
+.h4 {
+  @include typography($text-h4...);
+}
+
+.h4_h3-desktop {
+  @media only screen and (min-width: $layout-row){
+    @include typography($text-h3...);
+  }
+}
+
+.h5 {
+  @include typography($text-h5...);
+  color: color-grey-7;
+}
+
+.h6 {
+  @include typography($text-h6...);
+}
+
+.h7 {
+  @include typography($text-h7...);
+}
+
+.h8 {
+  @include typography($text-h8...);
+  text-transform: uppercase;
+}
+
+.h9 {
+  @include typography($text-h9...);
+}

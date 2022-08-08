@@ -5,22 +5,24 @@
 {% block title %}404{% endblock %}
 
 {% block content %}
-  <section>
-    <h1 class="title title_error">404</h1>
-    
-    <h3 class="h3 error__subtitle mb-2"><span class="h2 error__subtitle_larger">Oops!</span> we are sorry, but the page you requested was not found.</h3>
-    
-    <div class="d-flex flex-justify-center mb-1">
-      <a class="button d-inline-flex flex-align-items-center" href="/index.html"><span class="material-symbols-outlined icon_arrow-right icon_arrow_left-button">trending_flat</span>&nbsp; Go home</a>
-    </div>
+  <section class="error-block">
+    <div class="error-block__body">
+      <h1 class="error-block__title">404</h1>
 
-    <div class="d-flex flex-justify-center">
-      <ul class="social-links social-links_black d-flex">
+      <h2 class="error-block__subtitle"><span class="error-block__subtitle_larger">Oops!</span> we are sorry, but the page you requested was not found.</h2>
+    </div>
+      
+    <footer class="error-block__footer">
+      <a class="button button_arrow error-block__footer-button" href="/index.html">
+        <span class="material-symbols-outlined icon-arrow icon-arrow_left-button">trending_flat</span>&nbsp; Go home
+      </a>
+      
+      <ul class="social-links social-links_black">
         <li class="social-links__item"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>         
         <li class="social-links__item"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>         
         <li class="social-links__item"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>         
         <li class="social-links__item"><a href="#"><i class="fa-brands fa-dribbble"></i></a></li>
       </ul>
-    </div>
+    </footer>
   </section>
 {% endblock %}

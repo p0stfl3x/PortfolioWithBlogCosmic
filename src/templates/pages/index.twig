@@ -5,11 +5,11 @@
 {% block title %}{{ page }}{% endblock %}
 
 {% block content %}
-  <section class="hero">
-    <h1 class="title h2 mb-section-primary">Manifest is a newborn theme. Clean, simple and fast.</h1>
+  <section class="home-promoted">
+    <h1 class="home-promoted__title h2 h2_hero">Manifest is a newborn theme. <br>Clean, simple and fast.</h1>
     
-    <div class="carousel d-flex mb-section-primary">
-      <figure class="carousel__item">
+    <div class="home-promoted__carousel carousel">
+      <div class="carousel__item">
         <picture>
           <source 
             media="(max-width: 1023px)" 
@@ -20,27 +20,33 @@
           <source
             media="(min-width: 1024px)"
             srcset="img/home/img-home-01.webp"
+            width="544"
+            height="544"
             type="image/webp"
           />
           
           <source
             media="(min-width: 1024px)"
             srcset="img/home/img-home-01.png"
+            width="544"
+            height="544"
           />
 
           <img
-            class="mb-1" 
+            class="carousel__image" 
             src="img/home/img-home-01-m.png" 
+            width="258"
+            height="258"
             alt=""
           />
         </picture>
         
-        <figcaption class="h6">
+        <p class="carousel__caption">
           Mixkit Inspo
-        </figcaption>
-      </figure>
+        </p>
+      </div>
       
-      <figure class="carousel__item">
+      <div class="carousel__item">
         <picture>
           <source 
             media="(max-width: 1023px)" 
@@ -51,27 +57,33 @@
           <source
             media="(min-width: 1024px)"
             srcset="img/home/img-home-02.webp"
+            width="544"
+            height="544"
             type="image/webp"
           />
           
           <source
             media="(min-width: 1024px)"
             srcset="img/home/img-home-02.png"
+            width="544"
+            height="544"
           />
 
           <img
-            class="mb-1" 
-            src="img/home/img-home-02-m.png" 
+            class="carousel__image" 
+            src="img/home/img-home-02-m.png"
+            width="258"
+            height="258"
             alt=""
           />
         </picture>
         
-        <figcaption class="h6">
+        <p class="carousel__caption">
           Abalone
-        </figcaption>
-      </figure>
+        </p>
+      </div>
       
-      <figure class="carousel__item carousel__item_first-mobile">
+      <div class="carousel__item carousel__item_first-mobile">
         <picture>
           <source 
             media="(max-width: 1023px)" 
@@ -82,27 +94,33 @@
           <source
             media="(min-width: 1024px)"
             srcset="img/home/img-home-03.webp"
+            width="544"
+            height="544"
             type="image/webp"
           />
           
           <source
             media="(min-width: 1024px)"
             srcset="img/home/img-home-03.png"
+            width="544"
+            height="544"
           />
 
           <img
-            class="mb-1" 
-            src="img/home/img-home-03-m.png" 
+            class="carousel__image" 
+            src="img/home/img-home-03-m.png"
+            width="258"
+            height="258"
             alt=""
           />
         </picture>
         
-        <figcaption class="h6">
+        <p class="carousel__caption">
           Placeholdery
-        </figcaption>
-      </figure>
+        </p>
+      </div>
       
-      <figure class="carousel__item carousel__item_last">
+      <div class="carousel__item carousel__item_last">
         <picture>
           <source 
             media="(max-width: 1023px)" 
@@ -113,39 +131,45 @@
           <source
             media="(min-width: 1024px)"
             srcset="img/home/img-home-04.webp"
+            width="544"
+            height="544"
             type="image/webp"
           />
           
           <source
             media="(min-width: 1024px)"
             srcset="img/home/img-home-04.png"
+            width="544"
+            height="544"
           />
 
           <img
-            class="mb-1" 
-            src="img/home/img-home-04-m.png" 
+            class="carousel__image" 
+            src="img/home/img-home-04-m.png"
+            width="258"
+            height="258"
             alt=""
           />
         </picture>
         
-        <figcaption class="h6">
+        <p class="carousel__caption">
           Dreamy
-        </figcaption>
-      </figure>
+        </p>
+      </div>
     </div>
       
-    <div class="flex-column-row-desktop-between mb-section-primary">
-      <div class="w-half-desktop mr-2 mb-block-primary mv-30">
-        <h4 class="h4 mb-1">
-          Full-time UI/UX designer <br><br class="d-none-touch">Head of Design at VeronaLabs.com
-        </h4>
+    <div class="home-promoted__description">
+      <div class="home-promoted__description-header">
+        <h2 class="home-promoted__description-title h4 h4_h3-desktop">
+          Full-time UI/UX designer <br><br class="home-promoted__break">Head of Design at VeronaLabs.com
+        </h2>
         
-        <a class="link_hoverable" href="#"><span class="text-hover">Read More &nbsp;</span><span class="material-symbols-outlined icon_arrow-right">trending_flat</span></a>
+        <a class="link_hoverable" href="#"><span class="text-hover">Read More </span><span class="material-symbols-outlined icon-arrow">trending_flat</span></a>
       </div>
         
-      <div class="w-half-desktop mv-30">
-        <p class="p5 p5-to-4-desktop mr-2-desktop">
-          We work with clients around the world from our headquarters in Charleston, Sout h Carolina.
+      <div class="home-promoted__description-info">
+        <p class="p5 p5_p4-desktop">
+          We work with clients around the world from our headquarters in Charleston, South Carolina.
           <br>
           <br>
           We focus on naming, branding, brand narratives, website design and development, and brand experiences.
@@ -154,159 +178,165 @@
     </div>
   </section>
   
-  <section>
-    <div class="d-flex flex-wrap flex-justify-between mb-block-primary_static">
-      <h3 class="h3 mr-2">Latest Posts</h3>
+  <section class="home-posts">
+    <div class="home-posts__header">
+      <h2 class="home-posts__title h3">Latest Posts</h2>
       
-      <a class="p6 d-flex flex-align-items-center color-grey-5" href="#">View All &nbsp;<span class="material-symbols-outlined icon_arrow-right">trending_flat</span></a>
+      <a class="home-posts__view-all" href="#">View All <span class="material-symbols-outlined icon-arrow">trending_flat</span></a>
     </div>
     
-    <div class="flex-column-row-desktop-between mx-n1-desktop mb-section-primary">
-      <div class="flex-item-equal mx-1-desktop mb-block-primary">
-        <figure>
-          <picture>
-            <source 
-              media="(max-width: 435px)" 
-              srcset="img/home/img-home-05.webp"
-              type="image/webp"
-            /> 
-            
-            <source 
-              media="(min-width: 900px)" 
-              srcset="img/home/img-home-05-d.webp"
-              type="image/webp"
-            />
-            
-            <source 
-              media="(min-width: 900px)" 
-              srcset="img/home/img-home-05-d.png"
-            />
-            
-            <source 
-              media="(min-width: 436px)" 
-              srcset="img/home/img-home-05@2x.webp"
-              type="image/webp"
-            />
-            
-            <source 
-              media="(min-width: 436px)" 
-              srcset="img/home/img-home-05@2x.png"
-            />
-            
-            <img 
-              class="image" 
-              src="img/home/img-home-05.png" 
-              alt=""
-            />
-          </picture>
+    <div class="home-posts__previews">
+      <div class="post-preview">
+        <picture>
+          <source 
+            media="(max-width: 435px)" 
+            srcset="img/home/img-home-05.webp"
+            type="image/webp"
+          /> 
+
+          <source 
+            media="(min-width: 900px)" 
+            srcset="img/home/img-home-05-d.webp"
+            type="image/webp"
+          />
+
+          <source 
+            media="(min-width: 900px)" 
+            srcset="img/home/img-home-05-d.png"
+          />
+
+          <source 
+            media="(min-width: 436px)" 
+            srcset="img/home/img-home-05@2x.webp"
+            type="image/webp"
+          />
+
+          <source 
+            media="(min-width: 436px)" 
+            srcset="img/home/img-home-05@2x.png"
+          />
+
+          <img 
+            class="post-preview__image image" 
+            src="img/home/img-home-05.png"
+            width="288"
+            height="211"
+            alt=""
+          />
+        </picture>
           
-          <figcaption class="p9 d-flex flex-column d-flex_r flex-justify-between">
-            <span>Interface Design</span>
-            <span>8 June, 2020</span>
-          </figcaption>
-        </figure>
+        <div class="post-preview__text">
+          <div class="post-preview__caption">
+            <p class="post-preview__category">Interface Design</p>
+            <p class="post-preview__date">8 June, 2020</p>
+          </div>
 
-        <h3 class="h3 mb-1">UX traffic light colours</h3>
+          <h3 class="post-preview__title h3">UX traffic light colours</h3>
 
-        <p class="p5 mv-28">UI has to make a huge visual difference between warning, an alert and a success.</p>
+          <p class="post-preview__description">UI has to make a huge visual difference between warning, an alert and a success.</p>
+        </div>
       </div>
       
-      <div class="flex-item-equal mx-1-desktop mb-block-primary">
-        <figure>
-          <picture>
-            <source 
-              media="(max-width: 435px)" 
-              srcset="img/home/img-home-06.webp"
-              type="image/webp"
-            /> 
-            
-            <source 
-              media="(min-width: 900px)" 
-              srcset="img/home/img-home-06-d.webp"
-              type="image/webp"
-            />
-            
-            <source 
-              media="(min-width: 900px)" 
-              srcset="img/home/img-home-06-d.png"
-            />
-            
-            <source 
-              media="(min-width: 436px)" 
-              srcset="img/home/img-home-06@2x.webp"
-              type="image/webp"
-            />
-            
-            <source 
-              media="(min-width: 436px)" 
-              srcset="img/home/img-home-06@2x.png"
-            />
-            
-            <img 
-              class="image" 
-              src="img/home/img-home-06.png" 
-              alt=""
-            />
-          </picture>
-          
-          <figcaption class="p9 d-flex flex-column d-flex_r flex-justify-between">
-            <span>Technology</span>
-            <span>6 May, 2020</span>
-          </figcaption>
-        </figure>
+      <div class="post-preview">
+        <picture>
+          <source 
+            media="(max-width: 435px)" 
+            srcset="img/home/img-home-06.webp"
+            type="image/webp"
+          /> 
 
-        <h3 class="h3 mv-28 mb-1">Using UX Design to Build a Sustainable Future</h3>
+          <source 
+            media="(min-width: 900px)" 
+            srcset="img/home/img-home-06-d.webp"
+            type="image/webp"
+          />
 
-        <p class="p5 mv-28">Transformation has to be driven by everybody, not just by climate groups.</p>
+          <source 
+            media="(min-width: 900px)" 
+            srcset="img/home/img-home-06-d.png"
+          />
+
+          <source 
+            media="(min-width: 436px)" 
+            srcset="img/home/img-home-06@2x.webp"
+            type="image/webp"
+          />
+
+          <source 
+            media="(min-width: 436px)" 
+            srcset="img/home/img-home-06@2x.png"
+          />
+
+          <img 
+            class="post-preview__image image" 
+            src="img/home/img-home-06.png" 
+            width="288"
+            height="211"
+            alt=""
+          />
+        </picture>
+        
+        <div class="post-preview__text">
+          <div class="post-preview__caption">
+            <p class="post-preview__category">Technology</p>
+            <p class="post-preview__date">6 May, 2020</p>
+          </div>
+
+          <h3 class="post-preview__title h3">Using UX Design to Build a Sustainable Future</h3>
+
+          <p class="post-preview__description">Transformation has to be driven by everybody, not just by climate groups.</p>
+        </div>
       </div>
       
-      <div class="flex-item-equal mx-1-desktop mb-block-primary">
-        <figure>
-          <picture>
-            <source 
-              media="(max-width: 435px)" 
-              srcset="img/home/img-home-07.webp"
-              type="image/webp"
-            /> 
-            
-            <source 
-              media="(min-width: 900px)" 
-              srcset="img/home/img-home-07-d.webp"
-              type="image/webp"
-            />
-            
-            <source 
-              media="(min-width: 900px)" 
-              srcset="img/home/img-home-07-d.png"
-            />
-            
-            <source 
-              media="(min-width: 436px)" 
-              srcset="img/home/img-home-07@2x.webp"
-              type="image/webp"
-            />
-            
-            <source 
-              media="(min-width: 436px)" 
-              srcset="img/home/img-home-07@2x.png"
-            />
-            
-            <img 
-              class="image" 
-              src="img/home/img-home-07.png" 
-              alt=""
-            />
-          </picture>
-          
-          <figcaption class="p9 d-flex flex-column d-flex_r flex-justify-between">
-            <span>Visual Design</span>
-            <span>8 June, 2020</span>
-          </figcaption>
-        </figure>
+      <div class="post-preview">
+        <picture>
+          <source 
+            media="(max-width: 435px)" 
+            srcset="img/home/img-home-07.webp"
+            type="image/webp"
+          /> 
 
-        <h3 class="h3 mb-1">Creativity vs. UX</h3>
+          <source 
+            media="(min-width: 900px)" 
+            srcset="img/home/img-home-07-d.webp"
+            type="image/webp"
+          />
 
-        <p class="p5 mv-28">Is it possible to create a delightful user experience without following best UX practices?</p>
+          <source 
+            media="(min-width: 900px)" 
+            srcset="img/home/img-home-07-d.png"
+          />
+
+          <source 
+            media="(min-width: 436px)" 
+            srcset="img/home/img-home-07@2x.webp"
+            type="image/webp"
+          />
+
+          <source 
+            media="(min-width: 436px)" 
+            srcset="img/home/img-home-07@2x.png"
+          />
+
+          <img 
+            class="post-preview__image image" 
+            src="img/home/img-home-07.png" 
+            width="288"
+            height="211"
+            alt=""
+          />
+        </picture>
+        
+        <div class="post-preview__text">
+          <div class="post-preview__caption">
+            <p class="post-preview__category">Visual Design</p>
+            <p class="post-preview__date">8 June, 2020</p>
+          </div>
+
+          <h3 class="post-preview__title h3">Creativity vs. UX</h3>
+
+          <p class="post-preview__description">Is it possible to create a delightful user experience without following best UX practices?</p>
+        </div>
       </div>
     </div>
   </section>

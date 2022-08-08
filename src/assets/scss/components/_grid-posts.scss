@@ -1,0 +1,23 @@
+.grid-posts {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $spacing-xl;
+  
+  @media only screen and (min-width: $layout-row) {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    gap: $spacing-xxl $spacing-gap-x;
+  }
+}
+
+.grid-posts__item {
+  margin-bottom: $spacing-l;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+  
+  @media only screen and (min-width: $layout-row) {
+    margin-bottom: 0;
+  }
+}

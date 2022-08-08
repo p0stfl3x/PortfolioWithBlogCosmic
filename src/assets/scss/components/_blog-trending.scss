@@ -1,0 +1,15 @@
+.blog-trending {
+  @include spacing(bottom, $xl-xxl...);
+}
+
+.blog-trending__title {
+  @include spacing(bottom, $l-xxl...);
+}
+
+.blog-trending__slider {
+  display: flex;
+}
+
+.blog-trending__preview_inactive {
+  display: none;
+}

@@ -1,0 +1,62 @@
+.project-hero {
+  @include spacing(bottom, $xl-xxl...);
+}
+
+.project-hero__header {
+  @include spacing(bottom, $xl-xxl...);
+}
+
+.project-hero__meta {
+  @extend %flex-columns-desktop;
+}
+
+.project-hero__subtitle {
+  @include typography($text-h5_wide...);
+  text-transform: uppercase;
+  @include spacing(bottom, $m-l...);
+}
+
+.project-hero__title {
+  @include spacing(bottom, $m-l...);
+}
+
+.project-hero__image {
+  max-width: 100%;
+}
+
+.project-hero__overview {
+  @extend %flex-column-desktop;
+  @include spacing(bottom, $xl-none...);
+}
+
+.project-hero__properties-column {
+  @extend %flex-column-desktop;
+}
+
+.project-hero__overview-title {
+  margin-bottom: $spacing-xs;
+}
+
+.project-hero__overview-description {
+  @include typography($text-h4...);
+  color: $color-grey-7;
+}
+
+.project-hero__properties-container {
+  @media only screen and (min-width: $layout-row) {
+    padding-left: $spacing-casestudy-properties;
+  }
+}
+
+.project-hero__property {
+  margin-bottom: $spacing-l;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.project-hero__property-value {
+  @include typography($text-h4...);
+  color: $color-grey-7;
+}

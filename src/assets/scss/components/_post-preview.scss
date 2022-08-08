@@ -1,0 +1,109 @@
+.post-preview {
+  flex: 1;
+  margin-bottom: $spacing-l;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+  
+  @media only screen and (min-width: 900px) {
+    margin: 0 $spacing-xs;
+  }
+}
+
+.post-preview__image {
+  @include spacing(bottom, $xs-s...);
+}
+
+.post-preview__caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include typography($text-h9...);
+  color: $color-grey-5;
+  margin-bottom: $spacing-s;
+  
+  @media only screen and (min-width: 430px) {
+    flex-direction: row;
+  }
+}
+
+.post-preview__category {
+  margin-bottom: $spacing-xxs;
+  
+  @media only screen and (min-width: 430px) {
+    margin-bottom: 0;
+  }
+}
+
+.post-preview__title {
+  max-width: 34rem;
+  margin-bottom: $spacing-s;
+  
+  @media only screen and (min-width: 900px) {
+    min-height: 7.2rem;
+    margin-bottom: 0;
+  }
+}
+
+.post-preview__description {
+  @include typography($text-h5...);
+  color: $color-grey-7;
+  max-width: 34rem;
+}
+
+.post-preview_trending {
+  @extend %flex-columns-desktop;
+  margin: 0;
+  
+  .post-preview__image {
+    @extend %flex-column-desktop;
+    @include spacing(bottom, $xs-none...);
+  }
+  
+  .post-preview__text {
+    @extend %flex-column-desktop;
+
+    @media only screen and (min-width: 900px) {
+      align-self: flex-end;
+      
+      & > * {
+        padding-left: $spacing-m;
+      }
+    }
+  }
+  
+  .post-preview__category {
+    @include typography($text-h6...);
+    color: $color-grey-5;
+    margin-bottom: $spacing-s;
+  }
+  
+  .post-preview__title {
+    min-height: auto;
+    margin-bottom: $spacing-xs;
+    max-width: 24rem;
+  }
+  
+  .post-preview__date {
+    @include typography($text-h6...);
+    color: $color-grey-5;
+    @include spacing(bottom, $m-l...);
+  }
+  
+  .post-preview__description {
+    @include spacing(bottom, $l-xl...);
+    
+    @media only screen and (min-width: 900px) {
+      margin-right: $spacing-l;
+    }
+    
+    a {
+      color: $color-grey-5;
+    }
+  }
+}
+
+.post-preview_grid {
+  margin: 0;
+}

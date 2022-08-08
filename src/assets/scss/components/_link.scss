@@ -1,0 +1,29 @@
+a {
+  color: $color-primary;
+  text-decoration: none;
+  
+  &:hover, &:active {
+    color: $color-primary;
+  }
+}
+
+.link {
+
+}
+
+.link_hoverable {
+  display: flex;
+  align-items: center;
+  color: $color-grey-5;
+  
+  .text-hover {
+    display: none;
+  }
+  
+  &:hover {
+    .text-hover {
+      display: inline;
+      color: $color-primary;
+    }
+  }
+}

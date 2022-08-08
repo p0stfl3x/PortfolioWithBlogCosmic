@@ -5,10 +5,10 @@
     {% for url, name in navigation %}
       <li
         {% if name == page %}
-          class="is-selected"
+          class="navigation__link_active"
         {% endif %}
       >
-        <a class="link nav_link h8" href="{{ url }}">{{ name }}</a>
+        <a class="link navigation__link" href="{{ url }}">{{ name }}</a>
       </li>
     {% endfor %}
   </ul>

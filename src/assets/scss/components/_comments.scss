@@ -1,0 +1,21 @@
+.comments {
+  
+}
+
+.comments__title {
+  margin-bottom: $spacing-s;
+}
+
+.comments__item {
+  border-bottom: 1px solid $color-grey-1;
+  &:last-child {
+    border-bottom: none;
+  }
+  
+  @include spacing(bottom, $s-l...);
+    
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+

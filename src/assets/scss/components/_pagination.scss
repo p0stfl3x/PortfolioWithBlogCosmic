@@ -1,0 +1,11 @@
+.pagination {
+  display: flex;
+  
+  .pagination__item {
+    margin-right: $spacing-s;
+  }
+  
+  .pagination__item_active {
+    color: $color-grey-5;
+  }
+}

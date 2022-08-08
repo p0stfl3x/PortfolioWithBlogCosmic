@@ -1,0 +1,228 @@
+@import "../helpers/_variables.scss"; 
+@import "../helpers/_mixins.scss";
+
+/**
+ * Fonts
+ */
+@font-face {
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: $font-weight-normal;
+  src: local(''),
+       url('../../fonts/red-hat-display-v12-latin-regular.woff2') format('woff2'),
+       url('../../fonts/red-hat-display-v12-latin-regular.woff') format('woff'),
+       url('../../fonts/red-hat-display-v12-latin-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: $font-weight-normal;
+  src: local(''),
+       url('../../fonts/lato-v23-latin-regular.woff2') format('woff2'),
+       url('../../fonts/lato-v23-latin-regular.woff') format('woff'),
+       url('../../fonts/lato-v23-latin-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: $font-weight-bold;
+  src: local(''),
+       url('../../fonts/lato-v23-latin-700.woff2') format('woff2'),
+       url('../../fonts/lato-v23-latin-700.woff') format('woff'),
+       url('../../fonts/lato-v23-latin-700.ttf') format('truetype');
+}
+
+/**
+ * Layout
+ */
+html {
+  font-family: $font-secondary;
+  text-decoration: none;
+  color: $color-primary;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  max-width: $wrapper-width-primary;
+  margin: 0 auto;
+  padding: 0 $spacing-xs;
+}
+
+@media only screen and (min-width: $wrapper-tablet) {
+  .wrapper {
+    padding: 0 $spacing-l;
+  }
+}
+
+@media only screen and (min-width: $wrapper-desktop) {
+  .wrapper {
+    padding: 0 $spacing-wrapper-desktop;
+  }
+}
+
+.wrapper_article {
+  max-width: $wrapper-width-comments;
+  position: relative;
+  padding: 0;
+}
+
+.wrapper_error {
+  max-width: $wrapper-width-error;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/**
+ * Tags
+ */
+h1, h2, h3, h4, h5, h6, p {
+  padding: 0;
+  margin: 0;
+}
+
+/**
+ * Header
+ */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $spacing-xs 0 $spacing-l;
+  margin-right: $spacing-icon-compensation;
+}
+
+@media only screen and (min-width: $wrapper-tablet) {
+  .header {
+    padding: $spacing-l 0;
+  }
+}
+
+@media only screen and (min-width: $wrapper-desktop) {
+  .header {
+    padding: $spacing-header-desktop 0;
+  }
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+}
+
+.header_error {
+  justify-content: center;
+  margin-right: 0;
+  padding-bottom: $spacing-header-desktop;
+}
+
+/**
+ * Navigation
+ */
+.navigation {
+  display: none;
+  
+  ul {
+    display: flex;
+    margin: 0;
+    list-style: none;
+    
+    li {
+      margin-right: $spacing-nav-tablet;
+      
+      @media only screen and (min-width: $layout-row) {
+        margin-right: $spacing-nav-desktop;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $navigation-visible) {
+  .navigation {
+    display: flex;
+  }
+}
+
+.navigation__link {
+  @include typography($text-h8...);
+  text-transform: uppercase;
+}
+
+.navigation__link_active {
+  margin: auto;
+  padding-bottom: toRem(4);
+  background:linear-gradient($color-primary,$color-primary) bottom no-repeat;
+  background-size: 50% 1px;
+}
+
+/**
+ * Footer
+ */
+.footer {
+  width: 100vw;
+  @include spacing(top, $xl-xxl...);
+  padding: $spacing-xl 0;
+  background: $color-grey-1;
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    @media only screen and (min-width: $layout-row) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media only screen and (min-width: $layout-row) {
+  .footer {
+    padding: $spacing-footer-desktop 0;
+  }
+}
+
+.footer__header {
+  @include spacing(bottom, $l-none...);
+}
+
+.footer__title {
+  @include spacing(bottom, $xs-m...);
+}
+
+.footer__contact {
+  display: block;
+  @include typography($text-h6...);
+  margin-bottom: $spacing-xs;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.footer__social-links {
+  @include spacing(bottom, $l-none...);
+}
+
+.footer__social-link {
+  display: block;
+  margin-bottom: $spacing-s;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+  a {
+    @include typography($text-h6...);
+  }
+}
+
+.footer__copyright {
+  @include typography($text-h9...);
+  
+  @media only screen and (min-width: $layout-row) {
+    align-self: flex-end;
+  }
+}

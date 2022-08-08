@@ -1,0 +1,17 @@
+.p4 {
+  @include typography($text-h4...);
+  color: $color-grey-7;
+}
+
+.p5 {
+  @include typography($text-h5...);
+  color: $color-grey-7;
+}
+
+
+.p5_p4-desktop {
+  @media only screen and (min-width: $layout-row){
+    @include typography($text-h4...);
+    color: $color-grey-7;
+  }
+}

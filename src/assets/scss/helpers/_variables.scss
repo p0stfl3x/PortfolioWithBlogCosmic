@@ -1,8 +1,19 @@
 /**
  * Layout
  */
-$wrapper-width-primary: 1120px;
-$wrapper-width-comments: 736px;
+$wrapper-width-primary: toRem(1120);
+$wrapper-width-comments: toRem(736);
+$wrapper-width-error: toRem(624);
+
+/**
+ * Breakpoints
+ */
+$wrapper-tablet: toRem(600);
+$wrapper-desktop: toRem(1024);
+$layout-row: toRem(900);
+$layout-row-tablet: toRem(700);
+$navigation-visible: toRem(768);
+$caption-row: toRem(430);
 
 /**
  * Colors
@@ -18,9 +29,116 @@ $color-grey-7: #565656;
 $color-grey-9: #323232;
 
 /**
- * Letter-spacing
+ * Fonts
  */
+$font-primary: 'Red Hat Display', sans-serif;
+$font-secondary: 'Lato', sans-serif;
+
+/**
+ * Font sizes
+ */
+$font-size-h1: 3rem;
+$font-size-h1_error: 8.75rem;
+$font-size-h2: 2.1rem;
+$font-size-h3: 1.45rem;
+$font-size-h4: 1.2rem;
+$font-size-h5: 1rem;
+$font-size-h6: 1rem;
+$font-size-h7: 1rem;
+$font-size-h8: 0.8rem;
+$font-size-h9: 0.75rem;
+
+/**
+ * Font parameters
+ */
+$font-weight-normal: 400;
+$font-weight-bolder: 500;
+$font-weight-bold: 700;
+
 $letterspacing-primary: 0.1em;
 $letterspacing-secondary: 0.05em;
 $letterspacing-wider: 0.3em;
+$letterspacing-wide: 0.5em;
 $letterspacing-default: 0;
+
+/**
+ * Spacing
+ */
+$spacing-xxs: 0.5rem;
+$spacing-xs: 1rem;
+$spacing-s: 1.5rem;
+$spacing-m: 2rem;
+$spacing-l: 3rem;
+$spacing-xl: 4rem;
+$spacing-xxl: 8rem;
+
+$spacing-gap-x: 2.5rem;
+$spacing-wrapper-desktop: 5rem;
+$spacing-header-desktop: 6rem;
+$spacing-footer-desktop: 8.5rem;
+$spacing-nav-tablet: 1.8rem;
+$spacing-nav-desktop: 3.3rem;
+
+$spacing-article: 6rem;
+$spacing-carousel-desktop: -10rem;
+$spacing-casestudy-properties: 12rem;
+$spacing-button-x: 2.15rem;
+$spacing-offset-y: 0.7rem;
+$spacing-button-icon: 0.5rem;
+$spacing-icon-compensation: -0.5rem;
+
+/**
+ * Maps: Spacings
+ */
+$none-m: ("touch": 0, "desktop": $spacing-m);
+
+$xs-none: ("touch": $spacing-xs, "desktop": 0);
+
+$xs-s: ("touch": $spacing-xs, "desktop": $spacing-s);
+
+$xs-m: ("touch": $spacing-xs, "desktop": $spacing-m);
+
+$xs-l: ("touch": $spacing-xs, "desktop": $spacing-l);
+
+$s-l: ("touch": $spacing-s, "desktop": $spacing-l);
+
+$m-none: ("touch": $spacing-m, "desktop": 0);
+
+$m-l: ("touch": $spacing-m, "desktop": $spacing-l);
+
+$m-xl: ("touch": $spacing-m, "desktop": $spacing-xl);
+
+$l-none: ("touch": $spacing-l, "desktop": 0);
+
+$l-xl: ("touch": $spacing-l, "desktop": $spacing-xl);
+
+$l-xxl: ("touch": $spacing-l, "desktop": $spacing-xxl);
+
+$xl-none: ("touch": $spacing-xl, "desktop": 0);
+
+$xl-xxl: ("touch": $spacing-xl, "desktop": $spacing-xxl);
+
+/**
+ * Maps: Text
+ */
+$text-h1: ("family": $font-primary, "size": $font-size-h1, "weight": $font-weight-normal, "height": 1.35, "spacing": $letterspacing-secondary);
+
+$text-h1_error: ("family": $font-primary, "size": $font-size-h1_error, "weight": $font-weight-bold, "height": 1.35, "spacing": $letterspacing-secondary);
+
+$text-h2: ("family": $font-primary, "size": $font-size-h2, "weight": $font-weight-normal, "height": 1.5, "spacing": $letterspacing-secondary);
+
+$text-h3: ("family": $font-primary, "size": $font-size-h3, "weight": $font-weight-normal, "height": 1.65, "spacing": $letterspacing-primary);
+
+$text-h4: ("family": $font-secondary, "size": $font-size-h4, "weight": $font-weight-normal, "height": 1.68, "spacing": $letterspacing-secondary);
+
+$text-h5: ("family": $font-secondary, "size": $font-size-h5, "weight": $font-weight-normal, "height": 1.65, "spacing": $letterspacing-secondary);
+
+$text-h5_wide: ("family": $font-secondary, "size": $font-size-h5, "weight": $font-weight-normal, "height": toRem(21), "spacing": $letterspacing-wide);
+
+$text-h6: ("family": $font-secondary, "size": $font-size-h6, "weight": $font-weight-normal, "height": 1.65, "spacing": $letterspacing-primary);
+
+$text-h7: ("family": $font-secondary, "size": $font-size-h7, "weight": $font-weight-bold, "height": 1.65, "spacing": $letterspacing-primary);
+
+$text-h8: ("family": $font-secondary, "size": $font-size-h8, "weight": $font-weight-normal, "height": 1.2, "spacing": $letterspacing-wider);
+
+$text-h9: ("family": $font-secondary, "size": $font-size-h9, "weight": $font-weight-normal, "height": 1.65, "spacing": $letterspacing-primary);

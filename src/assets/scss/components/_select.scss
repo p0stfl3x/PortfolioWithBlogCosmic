@@ -1,0 +1,36 @@
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") white no-repeat 100% 25% !important;
+  max-width: 35rem;
+  background-position: 10rem;
+  
+  option {
+    @include typography($text-h9...);
+    color: $color-grey-5;
+  }
+}
+
+select:focus {
+    outline: none;
+}
+
+select:active {
+  border-color: transparent;
+}
+
+select:active, select:hover {
+  outline-color: transparent;
+}
+
+select::-ms-expand { display: none; }
+
+.select {
+  @include typography($text-h6...);
+  color: $color-grey-7;
+  display: flex;
+  width: 100%;
+  padding-bottom: $spacing-xs;
+  border-color: transparent transparent $color-primary transparent;
+}

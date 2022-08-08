@@ -1,0 +1,42 @@
+.post-hero {
+  margin-bottom: $spacing-l;
+}
+
+.post-hero__category {
+  @include typography($text-h6...);
+  color: $color-grey-5;
+  @include spacing(bottom, $xs-s...);
+}
+
+.post-hero__title {
+  @include spacing(bottom, $xs-l...);
+}
+
+.post-hero__meta {
+  display: flex;
+  flex-direction: column;
+  @include spacing(bottom, $m-xl...);
+  
+  @media only screen and (min-width: $caption-row) {
+    flex-direction: row;
+  }
+}
+
+.post-hero__date {
+  @include typography($text-h6...);
+  color: $color-grey-5;
+  margin: 0 $spacing-m $spacing-xxs 0;
+  
+  @media only screen and (min-width: $caption-row) {
+    margin-bottom: 0;
+  }
+}
+
+.post-hero__discuss {
+  @include typography($text-h6...);
+  color: $color-grey-5;
+}
+
+.post-hero__image {
+  max-width: 100%;
+}

@@ -1,0 +1,60 @@
+.contact {
+  
+}
+
+.contact__header {
+  @extend %flex-columns-desktop;
+  @include spacing(bottom, $xl-xxl...);
+}
+
+.contact__body {
+  @extend %flex-columns-desktop;
+}
+
+.contact__title {
+  @extend %flex-column-desktop;
+  @include spacing(bottom, $m-none...);
+}
+
+.contact__description {
+  flex: 1;
+  max-width: 35rem;
+  
+  @media only screen and (min-width: $layout-row) {
+    max-width: 49%;
+  }
+}
+
+.contact__info {
+  @extend %flex-column-desktop;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__form {
+  @extend %flex-column-desktop;
+}
+
+.contact__info-heading {
+  margin-bottom: $spacing-s;
+}
+
+.contact__methods {
+  @include spacing(bottom, $m-l...);
+}
+
+.contact__method {
+  margin-bottom: $spacing-xs;
+  a {
+    @include typography($text-h6...);
+    color: $color-grey-7;
+  }
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contact__social-links {
+  @include spacing(bottom, $xl-none...);
+}

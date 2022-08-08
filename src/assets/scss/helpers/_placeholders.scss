@@ -1,5 +1,33 @@
-%margin-right-last-child {
-  &:last-child {
-    margin-right: 0;
+%flex-columns-desktop {
+  display: flex;
+  flex-direction: column;
+
+  @media only screen and (min-width: 900px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+%flex-column-desktop {
+  flex: 1;
+  @media only screen and (min-width: 900px) {
+    max-width: 48.5%;
+  }
+}
+
+%flex-columns-tablet {
+  display: flex;
+  flex-direction: column-reverse;
+
+  @media only screen and (min-width: 700px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+%flex-column-tablet {
+  flex: 1;
+  @media only screen and (min-width: 700px) {
+    max-width: 49%;
   }
 }

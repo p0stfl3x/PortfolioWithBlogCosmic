@@ -1,0 +1,45 @@
+.carousel {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  overflow: auto;
+  margin-right: -($spacing-xs);
+  
+  @media only screen and (min-width: $wrapper-tablet) {
+    margin-right: -($spacing-l);
+  }
+  
+  @media only screen and (min-width: $wrapper-desktop) {
+    margin: 0 $spacing-carousel-desktop;
+    justify-content: center;
+    overflow: hidden;
+  }
+}
+
+.carousel__item {
+  display: flex;
+  flex-direction: column;
+  margin-right: $spacing-xs;
+  
+  @media only screen and (min-width: $wrapper-desktop) {
+    margin-right: $spacing-m;
+  }
+}
+
+.carousel__item_last {
+  margin-right: 0;
+}
+
+.carousel__item_first-mobile {
+  @media only screen and (min-width: $wrapper-desktop) {
+    order: -1;
+  }
+}
+
+.carousel__image {
+  margin-bottom: $spacing-xs;
+}
+
+.carousel__caption {
+  @include typography($text-h6...);
+}

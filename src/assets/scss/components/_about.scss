@@ -1,0 +1,32 @@
+.about {
+  @extend %flex-columns-desktop;
+}
+
+.about__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @extend %flex-column-desktop;
+}
+
+.about__column_header{
+  @include spacing(bottom, $l-none...);
+}
+
+.about__title {
+  margin-bottom: $spacing-m;
+}
+
+.about__subtitle {
+  color: $color-grey-7;
+  @include spacing(bottom, $xs-s...);
+}
+
+.about__column_body{
+  @include spacing(left, $none-m...);
+}
+
+.about__text {
+  color: $color-grey-7;
+  margin-bottom: $spacing-l;
+}
